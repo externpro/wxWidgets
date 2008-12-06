@@ -9,304 +9,17 @@
 		<Platform
 			Name="Win32"
 		/>
+		<Platform
+			Name="x64"
+		/>
 	</Platforms>
 	<ToolFiles>
 	</ToolFiles>
 	<Configurations>
 		<Configuration
-			Name="DLL Universal Unicode Debug|Win32"
-			OutputDirectory=".\..\..\lib\vc_dll"
-			IntermediateDirectory=".\vc_mswunivuddll\wxzlib"
-			ConfigurationType="4"
-			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalOptions="/EHsc "
-				Optimization="0"
-				PreprocessorDefinitions="WIN32;_LIB;_DEBUG"
-				MinimalRebuild="true"
-				RuntimeLibrary="3"
-				RuntimeTypeInfo="true"
-				PrecompiledHeaderFile=".\vc_mswunivuddll\wxzlib/wx_wxzlib.pch"
-				AssemblerListingLocation=".\vc_mswunivuddll\wxzlib/"
-				ObjectFile=".\vc_mswunivuddll\wxzlib/"
-				ProgramDataBaseFileName="..\..\lib\vc_dll\wxzlibd.pdb"
-				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				Culture="1033"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_dll\wxzlibd.lib"
-				SuppressStartupBanner="true"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-				SuppressStartupBanner="true"
-				OutputFile=".\..\..\lib\vc_dll/wx_wxzlib.bsc"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="Universal Unicode Release|Win32"
-			OutputDirectory=".\..\..\lib\vc_lib"
-			IntermediateDirectory=".\vc_mswunivu\wxzlib"
-			ConfigurationType="4"
-			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalOptions="/EHsc "
-				Optimization="2"
-				InlineFunctionExpansion="1"
-				PreprocessorDefinitions="WIN32;_LIB"
-				StringPooling="true"
-				RuntimeLibrary="2"
-				EnableFunctionLevelLinking="true"
-				RuntimeTypeInfo="true"
-				PrecompiledHeaderFile=".\vc_mswunivu\wxzlib/wx_wxzlib.pch"
-				AssemblerListingLocation=".\vc_mswunivu\wxzlib/"
-				ObjectFile=".\vc_mswunivu\wxzlib/"
-				ProgramDataBaseFileName="..\..\lib\vc_lib\wxzlib.pdb"
-				SuppressStartupBanner="true"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				Culture="1033"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_lib\wxzlib.lib"
-				SuppressStartupBanner="true"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-				SuppressStartupBanner="true"
-				OutputFile=".\..\..\lib\vc_lib/wx_wxzlib.bsc"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="DLL Universal Debug|Win32"
-			OutputDirectory=".\..\..\lib\vc_dll"
-			IntermediateDirectory=".\vc_mswunivddll\wxzlib"
-			ConfigurationType="4"
-			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalOptions="/EHsc "
-				Optimization="0"
-				PreprocessorDefinitions="WIN32;_LIB;_DEBUG"
-				MinimalRebuild="true"
-				RuntimeLibrary="3"
-				RuntimeTypeInfo="true"
-				PrecompiledHeaderFile=".\vc_mswunivddll\wxzlib/wx_wxzlib.pch"
-				AssemblerListingLocation=".\vc_mswunivddll\wxzlib/"
-				ObjectFile=".\vc_mswunivddll\wxzlib/"
-				ProgramDataBaseFileName="..\..\lib\vc_dll\wxzlibd.pdb"
-				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				Culture="1033"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_dll\wxzlibd.lib"
-				SuppressStartupBanner="true"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-				SuppressStartupBanner="true"
-				OutputFile=".\..\..\lib\vc_dll/wx_wxzlib.bsc"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="Universal Release|Win32"
-			OutputDirectory=".\..\..\lib\vc_lib"
-			IntermediateDirectory=".\vc_mswuniv\wxzlib"
-			ConfigurationType="4"
-			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalOptions="/EHsc "
-				Optimization="2"
-				InlineFunctionExpansion="1"
-				PreprocessorDefinitions="WIN32;_LIB"
-				StringPooling="true"
-				RuntimeLibrary="2"
-				EnableFunctionLevelLinking="true"
-				RuntimeTypeInfo="true"
-				PrecompiledHeaderFile=".\vc_mswuniv\wxzlib/wx_wxzlib.pch"
-				AssemblerListingLocation=".\vc_mswuniv\wxzlib/"
-				ObjectFile=".\vc_mswuniv\wxzlib/"
-				ProgramDataBaseFileName="..\..\lib\vc_lib\wxzlib.pdb"
-				SuppressStartupBanner="true"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				Culture="1033"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_lib\wxzlib.lib"
-				SuppressStartupBanner="true"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-				SuppressStartupBanner="true"
-				OutputFile=".\..\..\lib\vc_lib/wx_wxzlib.bsc"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
 			Name="Release|Win32"
 			OutputDirectory=".\..\..\lib\vc_lib"
-			IntermediateDirectory=".\vc_msw\wxzlib"
+			IntermediateDirectory=".\vc_msw_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -337,10 +50,10 @@
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				RuntimeTypeInfo="true"
-				PrecompiledHeaderFile=".\vc_msw\wxzlib/wx_wxzlib.pch"
-				AssemblerListingLocation=".\vc_msw\wxzlib/"
-				ObjectFile=".\vc_msw\wxzlib/"
-				ProgramDataBaseFileName="..\..\lib\vc_lib\wxzlib.pdb"
+				PrecompiledHeaderFile="$(IntDir)\wxprec_$(ProjectName)lib.pch"
+				AssemblerListingLocation="$(IntDir)"
+				ObjectFile="$(IntDir)"
+				ProgramDataBaseFileName="$(OutDir)\$(TargetName).pdb"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -355,7 +68,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_lib\wxzlib.lib"
+				OutputFile="$(OutDir)\wxzlib.lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -368,151 +81,6 @@
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
 				OutputFile=".\..\..\lib\vc_lib/wx_wxzlib.bsc"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="Universal Debug|Win32"
-			OutputDirectory=".\..\..\lib\vc_lib"
-			IntermediateDirectory=".\vc_mswunivd\wxzlib"
-			ConfigurationType="4"
-			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalOptions="/EHsc "
-				Optimization="0"
-				PreprocessorDefinitions="WIN32;_LIB;_DEBUG"
-				MinimalRebuild="true"
-				RuntimeLibrary="3"
-				RuntimeTypeInfo="true"
-				PrecompiledHeaderFile=".\vc_mswunivd\wxzlib/wx_wxzlib.pch"
-				AssemblerListingLocation=".\vc_mswunivd\wxzlib/"
-				ObjectFile=".\vc_mswunivd\wxzlib/"
-				ProgramDataBaseFileName="..\..\lib\vc_lib\wxzlibd.pdb"
-				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				Culture="1033"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_lib\wxzlibd.lib"
-				SuppressStartupBanner="true"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-				SuppressStartupBanner="true"
-				OutputFile=".\..\..\lib\vc_lib/wx_wxzlib.bsc"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="DLL Universal Release|Win32"
-			OutputDirectory=".\..\..\lib\vc_dll"
-			IntermediateDirectory=".\vc_mswunivdll\wxzlib"
-			ConfigurationType="4"
-			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalOptions="/EHsc "
-				Optimization="2"
-				InlineFunctionExpansion="1"
-				PreprocessorDefinitions="WIN32;_LIB"
-				StringPooling="true"
-				RuntimeLibrary="2"
-				EnableFunctionLevelLinking="true"
-				RuntimeTypeInfo="true"
-				PrecompiledHeaderFile=".\vc_mswunivdll\wxzlib/wx_wxzlib.pch"
-				AssemblerListingLocation=".\vc_mswunivdll\wxzlib/"
-				ObjectFile=".\vc_mswunivdll\wxzlib/"
-				ProgramDataBaseFileName="..\..\lib\vc_dll\wxzlib.pdb"
-				SuppressStartupBanner="true"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				Culture="1033"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_dll\wxzlib.lib"
-				SuppressStartupBanner="true"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-				SuppressStartupBanner="true"
-				OutputFile=".\..\..\lib\vc_dll/wx_wxzlib.bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -524,7 +92,7 @@
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory=".\..\..\lib\vc_lib"
-			IntermediateDirectory=".\vc_mswd\wxzlib"
+			IntermediateDirectory=".\vc_mswd_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -550,15 +118,15 @@
 				AdditionalOptions="/EHsc "
 				Optimization="0"
 				PreprocessorDefinitions="WIN32;_LIB;_DEBUG"
-				MinimalRebuild="true"
+				MinimalRebuild="false"
 				RuntimeLibrary="3"
 				RuntimeTypeInfo="true"
-				PrecompiledHeaderFile=".\vc_mswd\wxzlib/wx_wxzlib.pch"
-				AssemblerListingLocation=".\vc_mswd\wxzlib/"
-				ObjectFile=".\vc_mswd\wxzlib/"
-				ProgramDataBaseFileName="..\..\lib\vc_lib\wxzlibd.pdb"
+				PrecompiledHeaderFile="$(IntDir)\wxprec_$(ProjectName)lib.pch"
+				AssemblerListingLocation="$(IntDir)"
+				ObjectFile="$(IntDir)"
+				ProgramDataBaseFileName="$(OutDir)\$(TargetName).pdb"
 				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
+				DebugInformationFormat="1"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -572,7 +140,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_lib\wxzlibd.lib"
+				OutputFile="$(OutDir)\wxzlibd.lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -584,7 +152,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile=".\..\..\lib\vc_lib/wx_wxzlib.bsc"
+				OutputFile="$(OutDir)/wx_$(ProjectName).bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -594,299 +162,9 @@
 			/>
 		</Configuration>
 		<Configuration
-			Name="DLL Release|Win32"
-			OutputDirectory=".\..\..\lib\vc_dll"
-			IntermediateDirectory=".\vc_mswdll\wxzlib"
-			ConfigurationType="4"
-			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalOptions="/EHsc "
-				Optimization="2"
-				InlineFunctionExpansion="1"
-				PreprocessorDefinitions="WIN32;_LIB"
-				StringPooling="true"
-				RuntimeLibrary="2"
-				EnableFunctionLevelLinking="true"
-				RuntimeTypeInfo="true"
-				PrecompiledHeaderFile=".\vc_mswdll\wxzlib/wx_wxzlib.pch"
-				AssemblerListingLocation=".\vc_mswdll\wxzlib/"
-				ObjectFile=".\vc_mswdll\wxzlib/"
-				ProgramDataBaseFileName="..\..\lib\vc_dll\wxzlib.pdb"
-				SuppressStartupBanner="true"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				Culture="1033"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_dll\wxzlib.lib"
-				SuppressStartupBanner="true"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-				SuppressStartupBanner="true"
-				OutputFile=".\..\..\lib\vc_dll/wx_wxzlib.bsc"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="DLL Unicode Release|Win32"
-			OutputDirectory=".\..\..\lib\vc_dll"
-			IntermediateDirectory=".\vc_mswudll\wxzlib"
-			ConfigurationType="4"
-			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalOptions="/EHsc "
-				Optimization="2"
-				InlineFunctionExpansion="1"
-				PreprocessorDefinitions="WIN32;_LIB"
-				StringPooling="true"
-				RuntimeLibrary="2"
-				EnableFunctionLevelLinking="true"
-				RuntimeTypeInfo="true"
-				PrecompiledHeaderFile=".\vc_mswudll\wxzlib/wx_wxzlib.pch"
-				AssemblerListingLocation=".\vc_mswudll\wxzlib/"
-				ObjectFile=".\vc_mswudll\wxzlib/"
-				ProgramDataBaseFileName="..\..\lib\vc_dll\wxzlib.pdb"
-				SuppressStartupBanner="true"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				Culture="1033"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_dll\wxzlib.lib"
-				SuppressStartupBanner="true"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-				SuppressStartupBanner="true"
-				OutputFile=".\..\..\lib\vc_dll/wx_wxzlib.bsc"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="Unicode Debug|Win32"
+			Name="ReleaseMT|Win32"
 			OutputDirectory=".\..\..\lib\vc_lib"
-			IntermediateDirectory=".\vc_mswud\wxzlib"
-			ConfigurationType="4"
-			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalOptions="/EHsc "
-				Optimization="0"
-				PreprocessorDefinitions="WIN32;_LIB;_DEBUG"
-				MinimalRebuild="true"
-				RuntimeLibrary="3"
-				RuntimeTypeInfo="true"
-				PrecompiledHeaderFile=".\vc_mswud\wxzlib/wx_wxzlib.pch"
-				AssemblerListingLocation=".\vc_mswud\wxzlib/"
-				ObjectFile=".\vc_mswud\wxzlib/"
-				ProgramDataBaseFileName="..\..\lib\vc_lib\wxzlibd.pdb"
-				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				Culture="1033"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_lib\wxzlibd.lib"
-				SuppressStartupBanner="true"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-				SuppressStartupBanner="true"
-				OutputFile=".\..\..\lib\vc_lib/wx_wxzlib.bsc"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="Universal Unicode Debug|Win32"
-			OutputDirectory=".\..\..\lib\vc_lib"
-			IntermediateDirectory=".\vc_mswunivud\wxzlib"
-			ConfigurationType="4"
-			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalOptions="/EHsc "
-				Optimization="0"
-				PreprocessorDefinitions="WIN32;_LIB;_DEBUG"
-				MinimalRebuild="true"
-				RuntimeLibrary="3"
-				RuntimeTypeInfo="true"
-				PrecompiledHeaderFile=".\vc_mswunivud\wxzlib/wx_wxzlib.pch"
-				AssemblerListingLocation=".\vc_mswunivud\wxzlib/"
-				ObjectFile=".\vc_mswunivud\wxzlib/"
-				ProgramDataBaseFileName="..\..\lib\vc_lib\wxzlibd.pdb"
-				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				Culture="1033"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_lib\wxzlibd.lib"
-				SuppressStartupBanner="true"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-				SuppressStartupBanner="true"
-				OutputFile=".\..\..\lib\vc_lib/wx_wxzlib.bsc"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="Unicode Release|Win32"
-			OutputDirectory=".\..\..\lib\vc_lib"
-			IntermediateDirectory=".\vc_mswu\wxzlib"
+			IntermediateDirectory=".\vc_msws_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -914,13 +192,13 @@
 				InlineFunctionExpansion="1"
 				PreprocessorDefinitions="WIN32;_LIB"
 				StringPooling="true"
-				RuntimeLibrary="2"
+				RuntimeLibrary="0"
 				EnableFunctionLevelLinking="true"
 				RuntimeTypeInfo="true"
-				PrecompiledHeaderFile=".\vc_mswu\wxzlib/wx_wxzlib.pch"
-				AssemblerListingLocation=".\vc_mswu\wxzlib/"
-				ObjectFile=".\vc_mswu\wxzlib/"
-				ProgramDataBaseFileName="..\..\lib\vc_lib\wxzlib.pdb"
+				PrecompiledHeaderFile="$(IntDir)\wxprec_$(ProjectName)lib.pch"
+				AssemblerListingLocation="$(IntDir)"
+				ObjectFile="$(IntDir)"
+				ProgramDataBaseFileName="$(OutDir)\$(TargetName).pdb"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -935,7 +213,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_lib\wxzlib.lib"
+				OutputFile="$(OutDir)\wxzlibs.lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -957,9 +235,9 @@
 			/>
 		</Configuration>
 		<Configuration
-			Name="DLL Debug|Win32"
-			OutputDirectory=".\..\..\lib\vc_dll"
-			IntermediateDirectory=".\vc_mswddll\wxzlib"
+			Name="Release|x64"
+			OutputDirectory=".\..\..\lib\vc_lib_$(PlatformName)"
+			IntermediateDirectory=".\vc_msw_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -979,93 +257,22 @@
 			/>
 			<Tool
 				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalOptions="/EHsc "
-				Optimization="0"
-				PreprocessorDefinitions="WIN32;_LIB;_DEBUG"
-				MinimalRebuild="true"
-				RuntimeLibrary="3"
-				RuntimeTypeInfo="true"
-				PrecompiledHeaderFile=".\vc_mswddll\wxzlib/wx_wxzlib.pch"
-				AssemblerListingLocation=".\vc_mswddll\wxzlib/"
-				ObjectFile=".\vc_mswddll\wxzlib/"
-				ProgramDataBaseFileName="..\..\lib\vc_dll\wxzlibd.pdb"
-				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				Culture="1033"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_dll\wxzlibd.lib"
-				SuppressStartupBanner="true"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-				SuppressStartupBanner="true"
-				OutputFile=".\..\..\lib\vc_dll/wx_wxzlib.bsc"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="DLL Universal Unicode Release|Win32"
-			OutputDirectory=".\..\..\lib\vc_dll"
-			IntermediateDirectory=".\vc_mswunivudll\wxzlib"
-			ConfigurationType="4"
-			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
+				TargetEnvironment="3"
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				AdditionalOptions="/EHsc "
 				Optimization="2"
 				InlineFunctionExpansion="1"
-				PreprocessorDefinitions="WIN32;_LIB"
+				PreprocessorDefinitions="WIN64;_LIB"
 				StringPooling="true"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				RuntimeTypeInfo="true"
-				PrecompiledHeaderFile=".\vc_mswunivudll\wxzlib/wx_wxzlib.pch"
-				AssemblerListingLocation=".\vc_mswunivudll\wxzlib/"
-				ObjectFile=".\vc_mswunivudll\wxzlib/"
-				ProgramDataBaseFileName="..\..\lib\vc_dll\wxzlib.pdb"
+				PrecompiledHeaderFile="$(IntDir)\wxprec_$(ProjectName)lib.pch"
+				AssemblerListingLocation="$(IntDir)"
+				ObjectFile="$(IntDir)"
+				ProgramDataBaseFileName="$(OutDir)\$(TargetName).pdb"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -1080,7 +287,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_dll\wxzlib.lib"
+				OutputFile="$(OutDir)\wxzlib.lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -1092,7 +299,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile=".\..\..\lib\vc_dll/wx_wxzlib.bsc"
+				OutputFile=".\..\..\lib\vc_lib/wx_wxzlib.bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -1102,9 +309,9 @@
 			/>
 		</Configuration>
 		<Configuration
-			Name="DLL Unicode Debug|Win32"
-			OutputDirectory=".\..\..\lib\vc_dll"
-			IntermediateDirectory=".\vc_mswuddll\wxzlib"
+			Name="Debug|x64"
+			OutputDirectory=".\..\..\lib\vc_lib_$(PlatformName)"
+			IntermediateDirectory=".\vc_mswd_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -1124,21 +331,22 @@
 			/>
 			<Tool
 				Name="VCMIDLTool"
+				TargetEnvironment="3"
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				AdditionalOptions="/EHsc "
 				Optimization="0"
-				PreprocessorDefinitions="WIN32;_LIB;_DEBUG"
-				MinimalRebuild="true"
+				PreprocessorDefinitions="WIN64;_LIB;_DEBUG"
+				MinimalRebuild="false"
 				RuntimeLibrary="3"
 				RuntimeTypeInfo="true"
-				PrecompiledHeaderFile=".\vc_mswuddll\wxzlib/wx_wxzlib.pch"
-				AssemblerListingLocation=".\vc_mswuddll\wxzlib/"
-				ObjectFile=".\vc_mswuddll\wxzlib/"
-				ProgramDataBaseFileName="..\..\lib\vc_dll\wxzlibd.pdb"
+				PrecompiledHeaderFile="$(IntDir)\wxprec_$(ProjectName)lib.pch"
+				AssemblerListingLocation="$(IntDir)"
+				ObjectFile="$(IntDir)"
+				ProgramDataBaseFileName="$(OutDir)\$(TargetName).pdb"
 				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
+				DebugInformationFormat="1"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -1152,7 +360,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_dll\wxzlibd.lib"
+				OutputFile="$(OutDir)\wxzlibd.lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -1164,7 +372,81 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile=".\..\..\lib\vc_dll/wx_wxzlib.bsc"
+				OutputFile="$(OutDir)/wx_$(ProjectName).bsc"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="ReleaseMT|x64"
+			OutputDirectory=".\..\..\lib\vc_lib_$(PlatformName)"
+			IntermediateDirectory=".\vc_msws_$(PlatformName)\$(ProjectName)"
+			ConfigurationType="4"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				TargetEnvironment="3"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="/EHsc "
+				Optimization="2"
+				InlineFunctionExpansion="1"
+				PreprocessorDefinitions="WIN64;_LIB"
+				StringPooling="true"
+				RuntimeLibrary="0"
+				EnableFunctionLevelLinking="true"
+				RuntimeTypeInfo="true"
+				PrecompiledHeaderFile="$(IntDir)\wxprec_$(ProjectName)lib.pch"
+				AssemblerListingLocation="$(IntDir)"
+				ObjectFile="$(IntDir)"
+				ProgramDataBaseFileName="$(OutDir)\$(TargetName).pdb"
+				SuppressStartupBanner="true"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				Culture="1033"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile="$(OutDir)\wxzlibs.lib"
+				SuppressStartupBanner="true"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+				SuppressStartupBanner="true"
+				OutputFile=".\..\..\lib\vc_lib/wx_wxzlib.bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -1184,55 +466,7 @@
 				RelativePath="..\..\src\zlib\adler32.c"
 				>
 				<FileConfiguration
-					Name="DLL Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1248,7 +482,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Release|Win32"
+					Name="ReleaseMT|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1256,7 +490,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Unicode Release|Win32"
+					Name="Release|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1264,7 +498,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Unicode Debug|Win32"
+					Name="Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1272,39 +506,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Unicode Debug|Win32"
+					Name="ReleaseMT|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1316,55 +518,7 @@
 				RelativePath="..\..\src\zlib\compress.c"
 				>
 				<FileConfiguration
-					Name="DLL Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1380,7 +534,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Release|Win32"
+					Name="ReleaseMT|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1388,7 +542,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Unicode Release|Win32"
+					Name="Release|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1396,7 +550,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Unicode Debug|Win32"
+					Name="Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1404,39 +558,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Unicode Debug|Win32"
+					Name="ReleaseMT|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1448,55 +570,7 @@
 				RelativePath="..\..\src\zlib\crc32.c"
 				>
 				<FileConfiguration
-					Name="DLL Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1512,7 +586,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Release|Win32"
+					Name="ReleaseMT|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1520,7 +594,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Unicode Release|Win32"
+					Name="Release|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1528,7 +602,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Unicode Debug|Win32"
+					Name="Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1536,39 +610,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Unicode Debug|Win32"
+					Name="ReleaseMT|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1580,55 +622,7 @@
 				RelativePath="..\..\src\zlib\deflate.c"
 				>
 				<FileConfiguration
-					Name="DLL Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1644,7 +638,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Release|Win32"
+					Name="ReleaseMT|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1652,7 +646,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Unicode Release|Win32"
+					Name="Release|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1660,7 +654,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Unicode Debug|Win32"
+					Name="Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1668,39 +662,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Unicode Debug|Win32"
+					Name="ReleaseMT|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1712,55 +674,7 @@
 				RelativePath="..\..\src\zlib\gzio.c"
 				>
 				<FileConfiguration
-					Name="DLL Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1776,7 +690,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Release|Win32"
+					Name="ReleaseMT|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1784,7 +698,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Unicode Release|Win32"
+					Name="Release|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1792,7 +706,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Unicode Debug|Win32"
+					Name="Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1800,39 +714,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Unicode Debug|Win32"
+					Name="ReleaseMT|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1844,55 +726,7 @@
 				RelativePath="..\..\src\zlib\infback.c"
 				>
 				<FileConfiguration
-					Name="DLL Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1908,7 +742,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Release|Win32"
+					Name="ReleaseMT|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1916,7 +750,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Unicode Release|Win32"
+					Name="Release|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1924,7 +758,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Unicode Debug|Win32"
+					Name="Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1932,39 +766,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Unicode Debug|Win32"
+					Name="ReleaseMT|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1976,55 +778,7 @@
 				RelativePath="..\..\src\zlib\inffast.c"
 				>
 				<FileConfiguration
-					Name="DLL Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2040,7 +794,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Release|Win32"
+					Name="ReleaseMT|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2048,7 +802,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Unicode Release|Win32"
+					Name="Release|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2056,7 +810,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Unicode Debug|Win32"
+					Name="Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2064,39 +818,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Unicode Debug|Win32"
+					Name="ReleaseMT|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2108,55 +830,7 @@
 				RelativePath="..\..\src\zlib\inflate.c"
 				>
 				<FileConfiguration
-					Name="DLL Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2172,7 +846,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Release|Win32"
+					Name="ReleaseMT|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2180,7 +854,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Unicode Release|Win32"
+					Name="Release|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2188,7 +862,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Unicode Debug|Win32"
+					Name="Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2196,39 +870,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Unicode Debug|Win32"
+					Name="ReleaseMT|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2240,55 +882,7 @@
 				RelativePath="..\..\src\zlib\inftrees.c"
 				>
 				<FileConfiguration
-					Name="DLL Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2304,7 +898,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Release|Win32"
+					Name="ReleaseMT|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2312,7 +906,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Unicode Release|Win32"
+					Name="Release|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2320,7 +914,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Unicode Debug|Win32"
+					Name="Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2328,39 +922,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Unicode Debug|Win32"
+					Name="ReleaseMT|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2372,55 +934,7 @@
 				RelativePath="..\..\src\zlib\trees.c"
 				>
 				<FileConfiguration
-					Name="DLL Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2436,7 +950,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Release|Win32"
+					Name="ReleaseMT|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2444,7 +958,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Unicode Release|Win32"
+					Name="Release|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2452,7 +966,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Unicode Debug|Win32"
+					Name="Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2460,39 +974,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Unicode Debug|Win32"
+					Name="ReleaseMT|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2504,55 +986,7 @@
 				RelativePath="..\..\src\zlib\uncompr.c"
 				>
 				<FileConfiguration
-					Name="DLL Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2568,7 +1002,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Release|Win32"
+					Name="ReleaseMT|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2576,7 +1010,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Unicode Release|Win32"
+					Name="Release|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2584,7 +1018,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Unicode Debug|Win32"
+					Name="Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2592,39 +1026,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Unicode Debug|Win32"
+					Name="ReleaseMT|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2636,55 +1038,7 @@
 				RelativePath="..\..\src\zlib\zutil.c"
 				>
 				<FileConfiguration
-					Name="DLL Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Universal Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2700,7 +1054,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Release|Win32"
+					Name="ReleaseMT|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2708,7 +1062,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="DLL Unicode Release|Win32"
+					Name="Release|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2716,7 +1070,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Unicode Debug|Win32"
+					Name="Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2724,39 +1078,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Universal Unicode Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Universal Unicode Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="DLL Unicode Debug|Win32"
+					Name="ReleaseMT|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
