@@ -124,6 +124,13 @@ wxBusyInfo::wxBusyInfo(const wxString& message, wxWindow *parent)
     m_InfoFrame->Show(true);
     m_InfoFrame->Refresh();
     m_InfoFrame->Update();
+#ifdef __WXGTK20__
+    // without this hack, the static text will never been shown !
+    // http://sourceforge.net/tracker/index.php?func=detail&aid=1511746&group_id=9863&atid=309863
+    // http://trac.wxwidgets.org/ticket/7998
+    wxMilliSleep(100);
+    wxYield();
+#endif
 }
 
 wxBusyInfo::~wxBusyInfo()
