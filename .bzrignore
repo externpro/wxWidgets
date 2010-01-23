@@ -1,0 +1,7 @@
+cscope.*
+./help/
+./build/msw/vc_msw*
+./lib/vc_lib*
+./samples/samples.sln
+./samples/*/*.vcproj
+./samples/*/*/*.vcproj
