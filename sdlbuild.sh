@@ -2,7 +2,7 @@
 
 function usage()
 {
-  echo "Usage: $0 <path to sdlExtern>"
+  echo "Usage: $0 <path to sdlExtern>" >&2
 }
 
 if [[ $# == 0 ]]; then
@@ -11,11 +11,15 @@ if [[ $# == 0 ]]; then
 else
   SDLEXTERN=$1
   if [[ ! -d ${SDLEXTERN}/include ]]; then
-    echo "Error: $1 does not appear to be sdlExtern"
+    echo "Error: $1 does not appear to be sdlExtern" >&2
     usage
     exit
   fi
 fi
+# Make sure that it is an absolute path
+cd ${SDLEXTERN}
+SDLEXTERN=`pwd`
+cd - >/dev/null
 
 OS=$(uname -s)
 MAKECMD=gmake
@@ -25,7 +29,7 @@ fi
 DIRDBG=_${OS}_Debug
 DIRREL=_${OS}_Release
 
-# clean build -- if the directories exist, we'll wipe 'em out here
+# Clean build -- if the directories exist, we'll wipe 'em out here
 if [[ -d ${DIRDBG} ]]; then
   rm -rf ${DIRDBG}
 fi
@@ -35,18 +39,20 @@ fi
 
 mkdir ${DIRDBG}
 cd ${DIRDBG}
-../configure --with-gtk=2 --with-opengl --with-libjpeg=builtin --with-libpng=builtin --with-libtiff=builtin --with-expat=builtin --with-regex=builtin --with-zlib=builtin --disable-shared --disable-precomp-headers --enable-display --enable-std_string --enable-std_iostreams --enable-debug --enable-debug_flag --enable-debug_info --enable-debug_gdb
+# Debug
+CXXFLAGS="-O2 -mcpu=ultrasparc3 -Wno-unknown-pragmas" CFLAGS="-O2 -mcpu=ultrasparc3 -Wno-unknown-pragmas" CXXFLAGS="-mcpu=ultrasparc3" CFLAGS="-mcpu=ultrasparc3" ../configure --with-gtk=2 --with-opengl --with-libjpeg=builtin --with-libpng=builtin --with-libtiff=builtin --with-expat=builtin --with-regex=builtin --with-zlib=builtin --disable-shared --disable-precomp-headers --enable-display --enable-std_string --enable-std_iostreams --enable-debug --enable-debug_flag --enable-debug_info --enable-debug_gdb
 ${MAKECMD}
 cd ..
 
 mkdir ${DIRREL}
 cd ${DIRREL}
-../configure --with-gtk=2 --with-opengl --with-libjpeg=builtin --with-libpng=builtin --with-libtiff=builtin --with-expat=builtin --with-regex=builtin --with-zlib=builtin --disable-shared --disable-precomp-headers --enable-display --enable-std_string --enable-std_iostreams
+# Release
+CXXFLAGS="-O2 -mcpu=ultrasparc3 -Wno-unknown-pragmas" CFLAGS="-O2 -mcpu=ultrasparc3 -Wno-unknown-pragmas" CXXFLAGS="-mcpu=ultrasparc3" CFLAGS="-mcpu=ultrasparc3" ../configure --with-gtk=2 --with-opengl --with-libjpeg=builtin --with-libpng=builtin --with-libtiff=builtin --with-expat=builtin --with-regex=builtin --with-zlib=builtin --disable-shared --disable-precomp-headers --enable-display --enable-std_string --enable-std_iostreams
 ${MAKECMD}
 cd ..
 ./install-sh -c ${DIRREL}/lib/wx/config/gtk2-ansi-release-static-2.8 ${DIRREL}/thewxconfig
 
-# make sdlExtern directories if they don't already exist
+# Make sdlExtern directories if they don't already exist
 if [[ ! -d ${SDLEXTERN}/bin ]]; then
   mkdir -p ${SDLEXTERN}/bin
 fi
@@ -60,7 +66,19 @@ if [[ ! -d ${SDLEXTERN}/lib/wx/include/gtk2-ansi-release-static-2.8/wx ]]; then
   mkdir -p ${SDLEXTERN}/lib/wx/include/gtk2-ansi-release-static-2.8/wx
 fi
 
-# copy to sdlExtern
+# Lock the binary files in sdlExtern/lib
+for libFile in ${DIRDBG}/lib/libwx*.a ${DIRREL}/lib/libwx*.a
+do
+  svn lock ${SDLEXTERN}/lib/$(basename ${libFile})
+done
+
+# Lock the binary files in sdlExtern/bin
+for binFile in ${SDLEXTERN}/bin/wxrc ${SDLEXTERN}/bin/wxrc-2.8
+do
+  svn lock ${SDLEXTERN}/bin/$(basename ${binFile})
+done
+
+# Copy to sdlExtern
 cp ${DIRDBG}/lib/libwx*.a ${SDLEXTERN}/lib
 cp ${DIRREL}/lib/libwx*.a ${SDLEXTERN}/lib
 cp ${DIRDBG}/lib/wx/config/gtk2-ansi-debug-static-2.8 ${SDLEXTERN}/lib/wx/config
@@ -71,3 +89,4 @@ cp ${DIRREL}/utils/wxrc/wxrc ${SDLEXTERN}/bin
 cp ${DIRREL}/utils/wxrc/wxrc ${SDLEXTERN}/bin/wxrc-2.8
 cp ${DIRREL}/thewxconfig ${SDLEXTERN}/bin/wx-config
 
+#end of script
