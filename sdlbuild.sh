@@ -1,19 +1,65 @@
 #!/bin/bash
 
+cd $(dirname $0)
+curDir=$(pwd)
+
 function usage()
 {
-  echo "Usage: $0 <path to sdlExtern>" >&2
+  echo -e "Usage: $(basename $0) [-cl] [--copy] [--lock] <path to sdlExtern>"                     >&2
+  echo -e "\tWhere:\t[ -c | --copy ]     - tells it to copy the binaries to sdlExtern"            >&2
+  echo -e "\t\t[ -l | --lock ]     - tells it to first svn lock the binaries in sdlExtern"        >&2
+  echo -e "\t\t<path to sdlExtern> - is the relative or absolute path to the sdlExtern directory" >&2
+  exit 1
 }
 
-if [[ $# == 0 ]]; then
+let copy=0
+let lock=0
+
+# Parse the options and parameters.
+cmdLine="$*"
+while getopts "cl-:?h" Option
+do
+#{
+  case ${Option} in
+  #{
+    # This will copy the binaries to the sdlExtern directory
+    c ) let copy=1 ;;
+
+    # This will svn lock the binaries in the sdlExtern directory before copying
+    l ) let lock=1 ;;
+
+    - ) if [ "${OPTARG}" == "copy" ]
+        then
+          # This will copy the binaries to the sdlExtern directory
+          let copy=1
+        elif [ "${OPTARG}" == "lock" ]
+        then
+          # This will svn lock the binaries in the sdlExtern directory before copying
+          let lock=1
+        elif [ "${OPTARG}" == "help" ]
+        then
+          # Display the usage of this tool and quit.
+          usage
+        fi ;;
+
+    # Display usage and quit.
+    '?' ) usage ;;
+    'h' ) usage ;;
+  #}
+  esac
+#}
+done
+shift $(($OPTIND - 1))
+
+# Parse the parameter.
+if [ -z "${1}" ]
+then
   usage
-  exit
 else
-  SDLEXTERN=$1
+  SDLEXTERN=${1}
   if [[ ! -d ${SDLEXTERN}/include ]]; then
     echo "Error: $1 does not appear to be sdlExtern" >&2
     usage
-    exit
   fi
 fi
 # Make sure that it is an absolute path
@@ -31,62 +77,29 @@ DIRREL=_${OS}_Release
 
 # Clean build -- if the directories exist, we'll wipe 'em out here
 if [[ -d ${DIRDBG} ]]; then
-  rm -rf ${DIRDBG}
+  rm -Rf ${DIRDBG}
 fi
 if [[ -d ${DIRREL} ]]; then
-  rm -rf ${DIRREL}
+  rm -Rf ${DIRREL}
 fi
 
 mkdir ${DIRDBG}
 cd ${DIRDBG}
 # Debug
-CXXFLAGS="-O2 -mcpu=ultrasparc3 -Wno-unknown-pragmas" CFLAGS="-O2 -mcpu=ultrasparc3 -Wno-unknown-pragmas" CXXFLAGS="-mcpu=ultrasparc3" CFLAGS="-mcpu=ultrasparc3" ../configure --with-gtk=2 --with-opengl --with-libjpeg=builtin --with-libpng=builtin --with-libtiff=builtin --with-expat=builtin --with-regex=builtin --with-zlib=builtin --disable-shared --disable-precomp-headers --enable-display --enable-std_string --enable-std_iostreams --enable-debug --enable-debug_flag --enable-debug_info --enable-debug_gdb
+CXXFLAGS="-O2 -mcpu=ultrasparc -Wno-unknown-pragmas" CFLAGS="-O2 -mcpu=ultrasparc -Wno-unknown-pragmas" CXXFLAGS="-mcpu=ultrasparc" CFLAGS="-mcpu=ultrasparc" ../configure --with-gtk=2 --with-opengl --with-libjpeg=builtin --with-libpng=builtin --with-libtiff=builtin --with-expat=builtin --with-regex=builtin --with-zlib=builtin --disable-shared --disable-precomp-headers --enable-display --enable-std_string --enable-std_iostreams --enable-debug --enable-debug_flag --enable-debug_info --enable-debug_gdb
 ${MAKECMD}
 cd ..
 
 mkdir ${DIRREL}
 cd ${DIRREL}
 # Release
-CXXFLAGS="-O2 -mcpu=ultrasparc3 -Wno-unknown-pragmas" CFLAGS="-O2 -mcpu=ultrasparc3 -Wno-unknown-pragmas" CXXFLAGS="-mcpu=ultrasparc3" CFLAGS="-mcpu=ultrasparc3" ../configure --with-gtk=2 --with-opengl --with-libjpeg=builtin --with-libpng=builtin --with-libtiff=builtin --with-expat=builtin --with-regex=builtin --with-zlib=builtin --disable-shared --disable-precomp-headers --enable-display --enable-std_string --enable-std_iostreams
+CXXFLAGS="-O2 -mcpu=ultrasparc -Wno-unknown-pragmas" CFLAGS="-O2 -mcpu=ultrasparc -Wno-unknown-pragmas" CXXFLAGS="-mcpu=ultrasparc" CFLAGS="-mcpu=ultrasparc" ../configure --with-gtk=2 --with-opengl --with-libjpeg=builtin --with-libpng=builtin --with-libtiff=builtin --with-expat=builtin --with-regex=builtin --with-zlib=builtin --disable-shared --disable-precomp-headers --enable-display --enable-std_string --enable-std_iostreams
 ${MAKECMD}
 cd ..
-./install-sh -c ${DIRREL}/lib/wx/config/gtk2-ansi-release-static-2.8 ${DIRREL}/thewxconfig
 
-# Make sdlExtern directories if they don't already exist
-if [[ ! -d ${SDLEXTERN}/bin ]]; then
-  mkdir -p ${SDLEXTERN}/bin
-fi
-if [[ ! -d ${SDLEXTERN}/lib/wx/config ]]; then
-  mkdir -p ${SDLEXTERN}/lib/wx/config
-fi
-if [[ ! -d ${SDLEXTERN}/lib/wx/include/gtk2-ansi-debug-static-2.8/wx ]]; then
-  mkdir -p ${SDLEXTERN}/lib/wx/include/gtk2-ansi-debug-static-2.8/wx
-fi
-if [[ ! -d ${SDLEXTERN}/lib/wx/include/gtk2-ansi-release-static-2.8/wx ]]; then
-  mkdir -p ${SDLEXTERN}/lib/wx/include/gtk2-ansi-release-static-2.8/wx
-fi
+# Now install the binaries.
+${curDir}/sdlinstall.sh ${cmdLine}
 
-# Lock the binary files in sdlExtern/lib
-for libFile in ${DIRDBG}/lib/libwx*.a ${DIRREL}/lib/libwx*.a
-do
-  svn lock ${SDLEXTERN}/lib/$(basename ${libFile})
-done
-
-# Lock the binary files in sdlExtern/bin
-for binFile in ${SDLEXTERN}/bin/wxrc ${SDLEXTERN}/bin/wxrc-2.8
-do
-  svn lock ${SDLEXTERN}/bin/$(basename ${binFile})
-done
-
-# Copy to sdlExtern
-cp ${DIRDBG}/lib/libwx*.a ${SDLEXTERN}/lib
-cp ${DIRREL}/lib/libwx*.a ${SDLEXTERN}/lib
-cp ${DIRDBG}/lib/wx/config/gtk2-ansi-debug-static-2.8 ${SDLEXTERN}/lib/wx/config
-cp ${DIRDBG}/lib/wx/include/gtk2-ansi-debug-static-2.8/wx/setup.h ${SDLEXTERN}/lib/wx/include/gtk2-ansi-debug-static-2.8/wx
-cp ${DIRREL}/lib/wx/config/gtk2-ansi-release-static-2.8 ${SDLEXTERN}/lib/wx/config
-cp ${DIRREL}/lib/wx/include/gtk2-ansi-release-static-2.8/wx/setup.h ${SDLEXTERN}/lib/wx/include/gtk2-ansi-release-static-2.8/wx
-cp ${DIRREL}/utils/wxrc/wxrc ${SDLEXTERN}/bin
-cp ${DIRREL}/utils/wxrc/wxrc ${SDLEXTERN}/bin/wxrc-2.8
-cp ${DIRREL}/thewxconfig ${SDLEXTERN}/bin/wx-config
+echo "Done."
 
 #end of script
