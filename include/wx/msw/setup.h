@@ -269,7 +269,7 @@
 // Recommended setting: 1 if you use the standard streams anyhow and so
 //                      dependency on the standard streams library is not a
 //                      problem
-#define wxUSE_STD_IOSTREAM  0
+#define wxUSE_STD_IOSTREAM  1
 
 // Enable conversion to standard C++ string if 1.
 //
@@ -1003,7 +1003,7 @@
 // Default is 0.
 //
 // Recommended setting: 1 if you intend to use OpenGL, 0 otherwise
-#define wxUSE_GLCANVAS       0
+#define wxUSE_GLCANVAS       1
 
 // wxRichTextCtrl allows editing of styled text.
 //
@@ -1146,7 +1146,7 @@
 // Default is 1.
 //
 // Recommended setting: whatever your compiler likes more
-#define wxUSE_IOSTREAMH     1
+#define wxUSE_IOSTREAMH     0
 
 // ----------------------------------------------------------------------------
 // image format support
