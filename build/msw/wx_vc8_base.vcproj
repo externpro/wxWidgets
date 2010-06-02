@@ -292,7 +292,7 @@
 				ProgramDataBaseFileName="..\..\lib\vc_lib\wxbase28d.pdb"
 				WarningLevel="4"
 				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
+				DebugInformationFormat="1"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -445,7 +445,7 @@
 				ProgramDataBaseFileName="..\..\lib\vc_lib\wxbase28d.pdb"
 				WarningLevel="4"
 				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
+				DebugInformationFormat="1"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"

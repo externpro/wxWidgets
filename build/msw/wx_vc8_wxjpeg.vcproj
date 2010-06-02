@@ -354,7 +354,7 @@
 				ObjectFile=".\vc_mswd\wxjpeg/"
 				ProgramDataBaseFileName="..\..\lib\vc_lib\wxjpegd.pdb"
 				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
+				DebugInformationFormat="1"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -427,7 +427,7 @@
 				ObjectFile=".\vc_mswd\wxjpeg/"
 				ProgramDataBaseFileName="..\..\lib\vc_lib\wxjpegd.pdb"
 				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
+				DebugInformationFormat="1"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"

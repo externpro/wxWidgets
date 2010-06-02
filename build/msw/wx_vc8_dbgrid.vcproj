@@ -214,7 +214,7 @@
 				ProgramDataBaseFileName="..\..\lib\vc_lib\wxmsw28d_dbgrid.pdb"
 				WarningLevel="4"
 				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
+				DebugInformationFormat="1"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -290,7 +290,7 @@
 				ProgramDataBaseFileName="..\..\lib\vc_lib\wxmsw28d_dbgrid.pdb"
 				WarningLevel="4"
 				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
+				DebugInformationFormat="1"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"

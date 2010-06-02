@@ -205,7 +205,7 @@
 				ObjectFile=".\vc_mswd\wxtiff/"
 				ProgramDataBaseFileName="..\..\lib\vc_lib\wxtiffd.pdb"
 				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
+				DebugInformationFormat="1"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -353,7 +353,7 @@
 				ObjectFile=".\vc_mswd\wxtiff/"
 				ProgramDataBaseFileName="..\..\lib\vc_lib\wxtiffd.pdb"
 				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
+				DebugInformationFormat="1"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"

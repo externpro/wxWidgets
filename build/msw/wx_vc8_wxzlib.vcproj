@@ -276,7 +276,7 @@
 				ObjectFile=".\vc_mswd\wxzlib/"
 				ProgramDataBaseFileName="..\..\lib\vc_lib\wxzlibd.pdb"
 				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
+				DebugInformationFormat="1"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -421,7 +421,7 @@
 				ObjectFile=".\vc_mswd\wxzlib/"
 				ProgramDataBaseFileName="..\..\lib\vc_lib\wxzlibd.pdb"
 				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
+				DebugInformationFormat="1"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"

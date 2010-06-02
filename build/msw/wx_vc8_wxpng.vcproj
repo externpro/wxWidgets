@@ -55,7 +55,7 @@
 				ObjectFile=".\vc_mswd\wxpng/"
 				ProgramDataBaseFileName="..\..\lib\vc_lib\wxpngd.pdb"
 				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
+				DebugInformationFormat="1"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -203,7 +203,7 @@
 				ObjectFile=".\vc_mswd\wxpng/"
 				ProgramDataBaseFileName="..\..\lib\vc_lib\wxpngd.pdb"
 				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
+				DebugInformationFormat="1"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"

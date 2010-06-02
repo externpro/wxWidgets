@@ -280,7 +280,7 @@
 				ObjectFile=".\vc_mswd\wxexpat/"
 				ProgramDataBaseFileName="..\..\lib\vc_lib\wxexpatd.pdb"
 				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
+				DebugInformationFormat="1"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -427,7 +427,7 @@
 				ObjectFile=".\vc_mswd\wxexpat/"
 				ProgramDataBaseFileName="..\..\lib\vc_lib\wxexpatd.pdb"
 				SuppressStartupBanner="true"
-				DebugInformationFormat="3"
+				DebugInformationFormat="1"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
