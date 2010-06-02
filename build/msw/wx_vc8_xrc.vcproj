@@ -4,6 +4,7 @@
 	Version="8.00"
 	Name="xrc"
 	ProjectGUID="{4590B7A5-158B-4EE2-BE6F-DBCD94C2F4C1}"
+	RootNamespace="xrc"
 	>
 	<Platforms>
 		<Platform
@@ -18,7 +19,7 @@
 	<Configurations>
 		<Configuration
 			Name="ReleaseMT|Win32"
-			OutputDirectory="$(ConfigurationName)"
+			OutputDirectory=".\..\..\lib\vc_lib"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -95,7 +96,7 @@
 		</Configuration>
 		<Configuration
 			Name="ReleaseMT|x64"
-			OutputDirectory="$(PlatformName)\$(ConfigurationName)"
+			OutputDirectory=".\..\..\lib\vc_lib_$(PlatformName)"
 			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -173,7 +174,7 @@
 		</Configuration>
 		<Configuration
 			Name="Release|x64"
-			OutputDirectory="$(PlatformName)\$(ConfigurationName)"
+			OutputDirectory=".\..\..\lib\vc_lib_$(PlatformName)"
 			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -328,7 +329,7 @@
 		</Configuration>
 		<Configuration
 			Name="Debug|x64"
-			OutputDirectory="$(PlatformName)\$(ConfigurationName)"
+			OutputDirectory=".\..\..\lib\vc_lib_$(PlatformName)"
 			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
