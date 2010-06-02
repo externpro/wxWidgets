@@ -125,7 +125,7 @@
 				Optimization="2"
 				InlineFunctionExpansion="1"
 				AdditionalIncludeDirectories="..\..\lib\vc_lib\msw,..\..\include,..\..\src\tiff,..\..\src\jpeg,..\..\src\png,..\..\src\zlib,..\..\src\regex,..\..\src\expat\lib"
-				PreprocessorDefinitions="WIN32;_LIB;__WXMSW__;NDEBUG;WXBUILDING"
+				PreprocessorDefinitions="WIN64;_LIB;__WXMSW__;NDEBUG;WXBUILDING"
 				StringPooling="true"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -280,7 +280,7 @@
 				Optimization="2"
 				InlineFunctionExpansion="1"
 				AdditionalIncludeDirectories="..\..\lib\vc_lib\msw,..\..\include,..\..\src\tiff,..\..\src\jpeg,..\..\src\png,..\..\src\zlib,..\..\src\regex,..\..\src\expat\lib"
-				PreprocessorDefinitions="WIN32;_LIB;__WXMSW__;NDEBUG;WXBUILDING"
+				PreprocessorDefinitions="WIN64;_LIB;__WXMSW__;NDEBUG;WXBUILDING"
 				StringPooling="true"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -328,8 +328,8 @@
 			/>
 		</Configuration>
 		<Configuration
-			Name="Debug|x64"
-			OutputDirectory=".\..\..\lib\vc_lib_$(PlatformName)"
+			Name="Debug|Win32"
+			OutputDirectory=".\..\..\lib\vc_lib"
 			IntermediateDirectory=".\vc_mswd_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -350,7 +350,6 @@
 			/>
 			<Tool
 				Name="VCMIDLTool"
-				TargetEnvironment="3"
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
@@ -405,8 +404,8 @@
 			/>
 		</Configuration>
 		<Configuration
-			Name="Debug|Win32"
-			OutputDirectory=".\..\..\lib\vc_lib"
+			Name="Debug|x64"
+			OutputDirectory=".\..\..\lib\vc_lib_$(PlatformName)"
 			IntermediateDirectory=".\vc_mswd_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -427,13 +426,14 @@
 			/>
 			<Tool
 				Name="VCMIDLTool"
+				TargetEnvironment="3"
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				AdditionalOptions="/EHsc "
 				Optimization="0"
 				AdditionalIncludeDirectories="..\..\lib\vc_lib\mswd,..\..\include,..\..\src\tiff,..\..\src\jpeg,..\..\src\png,..\..\src\zlib,..\..\src\regex,..\..\src\expat\lib"
-				PreprocessorDefinitions="WIN32;_LIB;_DEBUG;__WXMSW__;__WXDEBUG__;WXBUILDING"
+				PreprocessorDefinitions="WIN64;_LIB;_DEBUG;__WXMSW__;__WXDEBUG__;WXBUILDING"
 				MinimalRebuild="true"
 				RuntimeLibrary="3"
 				RuntimeTypeInfo="true"
@@ -531,7 +531,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|x64"
+					Name="Debug|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -541,7 +541,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32"
+					Name="Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -595,7 +595,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|x64"
+					Name="Debug|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -604,7 +604,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32"
+					Name="Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -653,7 +653,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|x64"
+					Name="Debug|Win32"
 					ExcludedFromBuild="true"
 					>
 					<Tool
@@ -662,7 +662,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32"
+					Name="Debug|x64"
 					ExcludedFromBuild="true"
 					>
 					<Tool
@@ -675,10 +675,6 @@
 		<Filter
 			Name="Setup Headers"
 			>
-			<File
-				RelativePath="..\..\include\wx\univ\setup.h"
-				>
-			</File>
 			<File
 				RelativePath="..\..\include\wx\msw\setup.h"
 				>
@@ -723,16 +719,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|x64"
-					>
-					<Tool
-						Name="VCCustomBuildTool"
-						Description="Creating ..\..\lib\vc_lib\mswd\wx\setup.h"
-						CommandLine="copy &quot;$(InputPath)&quot; ..\..\lib\vc_lib\mswd\wx\setup.h&#x0D;&#x0A;"
-						Outputs="..\..\lib\vc_lib\mswd\wx\setup.h"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|Win32"
 					>
 					<Tool
@@ -742,6 +728,20 @@
 						Outputs="..\..\lib\vc_lib\mswd\wx\setup.h"
 					/>
 				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Creating ..\..\lib\vc_lib\mswd\wx\setup.h"
+						CommandLine="copy &quot;$(InputPath)&quot; ..\..\lib\vc_lib\mswd\wx\setup.h&#x0D;&#x0A;"
+						Outputs="..\..\lib\vc_lib\mswd\wx\setup.h"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\include\wx\univ\setup.h"
+				>
 			</File>
 		</Filter>
 		<Filter
@@ -791,7 +791,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|x64"
+					Name="Debug|Win32"
 					>
 					<Tool
 						Name="VCCustomBuildTool"
@@ -801,7 +801,7 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32"
+					Name="Debug|x64"
 					>
 					<Tool
 						Name="VCCustomBuildTool"
