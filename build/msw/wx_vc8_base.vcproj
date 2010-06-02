@@ -49,7 +49,7 @@
 				AdditionalIncludeDirectories="..\..\lib\vc_lib\msw,..\..\include,..\..\src\tiff,..\..\src\jpeg,..\..\src\png,..\..\src\zlib,..\..\src\regex,..\..\src\expat\lib"
 				PreprocessorDefinitions="WIN32;_LIB;__WXMSW__;NDEBUG;WXBUILDING;wxUSE_GUI=0;wxUSE_BASE=1"
 				StringPooling="true"
-				RuntimeLibrary="2"
+				RuntimeLibrary="0"
 				EnableFunctionLevelLinking="true"
 				RuntimeTypeInfo="true"
 				UsePrecompiledHeader="2"
@@ -127,7 +127,7 @@
 				AdditionalIncludeDirectories="..\..\lib\vc_lib\msw,..\..\include,..\..\src\tiff,..\..\src\jpeg,..\..\src\png,..\..\src\zlib,..\..\src\regex,..\..\src\expat\lib"
 				PreprocessorDefinitions="WIN64;_LIB;__WXMSW__;NDEBUG;WXBUILDING;wxUSE_GUI=0;wxUSE_BASE=1"
 				StringPooling="true"
-				RuntimeLibrary="2"
+				RuntimeLibrary="0"
 				EnableFunctionLevelLinking="true"
 				RuntimeTypeInfo="true"
 				UsePrecompiledHeader="2"
@@ -357,7 +357,7 @@
 				Optimization="0"
 				AdditionalIncludeDirectories="..\..\lib\vc_lib\mswd,..\..\include,..\..\src\tiff,..\..\src\jpeg,..\..\src\png,..\..\src\zlib,..\..\src\regex,..\..\src\expat\lib"
 				PreprocessorDefinitions="WIN32;_LIB;_DEBUG;__WXMSW__;__WXDEBUG__;WXBUILDING;wxUSE_GUI=0;wxUSE_BASE=1"
-				MinimalRebuild="true"
+				MinimalRebuild="false"
 				RuntimeLibrary="3"
 				RuntimeTypeInfo="true"
 				UsePrecompiledHeader="2"
@@ -434,7 +434,7 @@
 				Optimization="0"
 				AdditionalIncludeDirectories="..\..\lib\vc_lib\mswd,..\..\include,..\..\src\tiff,..\..\src\jpeg,..\..\src\png,..\..\src\zlib,..\..\src\regex,..\..\src\expat\lib"
 				PreprocessorDefinitions="WIN64;_LIB;_DEBUG;__WXMSW__;__WXDEBUG__;WXBUILDING;wxUSE_GUI=0;wxUSE_BASE=1"
-				MinimalRebuild="true"
+				MinimalRebuild="false"
 				RuntimeLibrary="3"
 				RuntimeTypeInfo="true"
 				UsePrecompiledHeader="2"
@@ -5728,10 +5728,6 @@
 			Name="Setup Headers"
 			>
 			<File
-				RelativePath="..\..\include\wx\univ\setup.h"
-				>
-			</File>
-			<File
 				RelativePath="..\..\include\wx\msw\setup.h"
 				>
 				<FileConfiguration
@@ -5794,6 +5790,10 @@
 						Outputs="..\..\lib\vc_lib\mswd\wx\setup.h"
 					/>
 				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\include\wx\univ\setup.h"
+				>
 			</File>
 		</Filter>
 		<Filter

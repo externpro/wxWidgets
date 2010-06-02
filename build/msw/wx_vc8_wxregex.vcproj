@@ -49,7 +49,7 @@
 				AdditionalIncludeDirectories="..\..\include,..\..\lib\vc_lib\msw"
 				PreprocessorDefinitions="WIN32;_LIB;__WXMSW__"
 				StringPooling="true"
-				RuntimeLibrary="2"
+				RuntimeLibrary="0"
 				EnableFunctionLevelLinking="true"
 				RuntimeTypeInfo="true"
 				PrecompiledHeaderFile=".\vc_msw\wxregex/wx_wxregex.pch"
@@ -124,7 +124,7 @@
 				AdditionalIncludeDirectories="..\..\include,..\..\lib\vc_lib\msw"
 				PreprocessorDefinitions="WIN64;_LIB;__WXMSW__"
 				StringPooling="true"
-				RuntimeLibrary="2"
+				RuntimeLibrary="0"
 				EnableFunctionLevelLinking="true"
 				RuntimeTypeInfo="true"
 				PrecompiledHeaderFile=".\vc_msw\wxregex/wx_wxregex.pch"
@@ -345,7 +345,7 @@
 				Optimization="0"
 				AdditionalIncludeDirectories="..\..\include,..\..\lib\vc_lib\mswd"
 				PreprocessorDefinitions="WIN32;_LIB;_DEBUG;__WXMSW__"
-				MinimalRebuild="true"
+				MinimalRebuild="false"
 				RuntimeLibrary="3"
 				RuntimeTypeInfo="true"
 				PrecompiledHeaderFile=".\vc_mswd\wxregex/wx_wxregex.pch"
@@ -419,7 +419,7 @@
 				Optimization="0"
 				AdditionalIncludeDirectories="..\..\include,..\..\lib\vc_lib\mswd"
 				PreprocessorDefinitions="WIN64;_LIB;_DEBUG;__WXMSW__"
-				MinimalRebuild="true"
+				MinimalRebuild="false"
 				RuntimeLibrary="3"
 				RuntimeTypeInfo="true"
 				PrecompiledHeaderFile=".\vc_mswd\wxregex/wx_wxregex.pch"
@@ -770,6 +770,10 @@
 				</FileConfiguration>
 			</File>
 			<File
+				RelativePath="..\..\include\wx\univ\setup.h"
+				>
+			</File>
+			<File
 				RelativePath="..\..\include\wx\msw\setup.h"
 				>
 				<FileConfiguration
@@ -832,10 +836,6 @@
 						Outputs="..\..\lib\vc_lib\mswd\wx\setup.h"
 					/>
 				</FileConfiguration>
-			</File>
-			<File
-				RelativePath="..\..\include\wx\univ\setup.h"
-				>
 			</File>
 		</Filter>
 	</Files>
