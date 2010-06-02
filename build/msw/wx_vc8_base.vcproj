@@ -73,7 +73,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_lib\wxbase28.lib"
+				OutputFile="$(OutDir)\wxbase28s.lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -151,7 +151,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_lib\wxbase28.lib"
+				OutputFile="$(OutDir)\wxbase28s.lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -228,7 +228,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_lib\wxbase28.lib"
+				OutputFile="$(OutDir)\wxbase28.lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -306,7 +306,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_lib\wxbase28.lib"
+				OutputFile="$(OutDir)\wxbase28.lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -382,7 +382,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_lib\wxbase28d.lib"
+				OutputFile="$(OutDir)\wxbase28d.lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -459,7 +459,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_lib\wxbase28d.lib"
+				OutputFile="$(OutDir)\wxbase28d.lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool

@@ -73,7 +73,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_lib\wxmsw28_gl.lib"
+				OutputFile="$(OutDir)\wxmsw28s_$(ProjectName).lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -151,7 +151,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_lib\wxmsw28_gl.lib"
+				OutputFile="$(OutDir)\wxmsw28s_$(ProjectName).lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -228,7 +228,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_lib\wxmsw28_gl.lib"
+				OutputFile="$(OutDir)\wxmsw28_$(ProjectName).lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -306,7 +306,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_lib\wxmsw28_gl.lib"
+				OutputFile="$(OutDir)\wxmsw28_$(ProjectName).lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -382,7 +382,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_lib\wxmsw28d_gl.lib"
+				OutputFile="$(OutDir)\wxmsw28d_$(ProjectName).lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -459,7 +459,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\lib\vc_lib\wxmsw28d_gl.lib"
+				OutputFile="$(OutDir)\wxmsw28d_$(ProjectName).lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
