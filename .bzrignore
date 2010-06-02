@@ -1,3 +1,10 @@
+.svn
+*.ncb
+*.suo
+*.vcproj.*.*.user
+*.opensdf
+*.sdf
+*.vcxproj.user
 cscope.*
 ./help/
 ./build/msw/vc_msw*
