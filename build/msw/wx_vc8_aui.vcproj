@@ -20,7 +20,7 @@
 		<Configuration
 			Name="ReleaseMT|Win32"
 			OutputDirectory=".\..\..\lib\vc_lib"
-			IntermediateDirectory="$(ConfigurationName)"
+			IntermediateDirectory=".\vc_msws_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -97,7 +97,7 @@
 		<Configuration
 			Name="ReleaseMT|x64"
 			OutputDirectory=".\..\..\lib\vc_lib_$(PlatformName)"
-			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
+			IntermediateDirectory=".\vc_msws_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -175,7 +175,7 @@
 		<Configuration
 			Name="Debug|x64"
 			OutputDirectory=".\..\..\lib\vc_lib_$(PlatformName)"
-			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
+			IntermediateDirectory=".\vc_mswd_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -252,7 +252,7 @@
 		<Configuration
 			Name="Release|x64"
 			OutputDirectory=".\..\..\lib\vc_lib_$(PlatformName)"
-			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
+			IntermediateDirectory=".\vc_msw_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -330,7 +330,7 @@
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory=".\..\..\lib\vc_lib"
-			IntermediateDirectory=".\vc_mswd\aui"
+			IntermediateDirectory=".\vc_mswd_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -406,7 +406,7 @@
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory=".\..\..\lib\vc_lib"
-			IntermediateDirectory=".\vc_msw\aui"
+			IntermediateDirectory=".\vc_msw_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
