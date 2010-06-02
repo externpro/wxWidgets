@@ -82,7 +82,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile=".\..\..\lib\vc_lib/wx_wxtiff.bsc"
+				OutputFile="$(OutDir)\wx_vc8_$(ProjectName)s.bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -157,7 +157,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile=".\..\..\lib\vc_lib/wx_wxtiff.bsc"
+				OutputFile="$(OutDir)\wx_vc8_$(ProjectName)s.bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -230,7 +230,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile=".\..\..\lib\vc_lib/wx_wxtiff.bsc"
+				OutputFile="$(OutDir)\wx_vc8_$(ProjectName)d.bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -304,7 +304,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile=".\..\..\lib\vc_lib/wx_wxtiff.bsc"
+				OutputFile="$(OutDir)\wx_vc8_$(ProjectName)d.bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -378,7 +378,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile=".\..\..\lib\vc_lib/wx_wxtiff.bsc"
+				OutputFile="$(OutDir)\wx_vc8_$(ProjectName).bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -453,7 +453,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile=".\..\..\lib\vc_lib/wx_wxtiff.bsc"
+				OutputFile="$(OutDir)\wx_vc8_$(ProjectName).bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
