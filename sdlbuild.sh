@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# linux: sudo apt-get install libgtk2.0-dev libglu1-mesa-dev
+
 cd $(dirname $0)
 
 OS=$(uname -s)
@@ -19,7 +21,7 @@ if [[ -d ${DIRREL} ]]; then
   rm -Rf ${DIRREL}
 fi
 if [[ -d ${DIRXTN} ]]; then
-  rm -RF ${DIRXTN}
+  rm -Rf ${DIRXTN}
 fi
 
 mkdir ${DIRDBG}
