@@ -19,7 +19,7 @@
 	<Configurations>
 		<Configuration
 			Name="ReleaseMT|Win32"
-			OutputDirectory=".\..\..\lib\vc_lib"
+			OutputDirectory=".\..\..\lib\vc8_lib"
 			IntermediateDirectory=".\vc_msws_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -96,7 +96,7 @@
 		</Configuration>
 		<Configuration
 			Name="ReleaseMT|x64"
-			OutputDirectory=".\..\..\lib\vc_lib_$(PlatformName)"
+			OutputDirectory=".\..\..\lib\vc8_lib_$(PlatformName)"
 			IntermediateDirectory=".\vc_msws_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -174,7 +174,7 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory=".\..\..\lib\vc_lib"
+			OutputDirectory=".\..\..\lib\vc8_lib"
 			IntermediateDirectory=".\vc_msw_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -251,7 +251,7 @@
 		</Configuration>
 		<Configuration
 			Name="Release|x64"
-			OutputDirectory=".\..\..\lib\vc_lib_$(PlatformName)"
+			OutputDirectory=".\..\..\lib\vc8_lib_$(PlatformName)"
 			IntermediateDirectory=".\vc_msw_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -329,7 +329,7 @@
 		</Configuration>
 		<Configuration
 			Name="Debug|Win32"
-			OutputDirectory=".\..\..\lib\vc_lib"
+			OutputDirectory=".\..\..\lib\vc8_lib"
 			IntermediateDirectory=".\vc_mswd_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -405,7 +405,7 @@
 		</Configuration>
 		<Configuration
 			Name="Debug|x64"
-			OutputDirectory=".\..\..\lib\vc_lib_$(PlatformName)"
+			OutputDirectory=".\..\..\lib\vc8_lib_$(PlatformName)"
 			IntermediateDirectory=".\vc_mswd_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -5728,6 +5728,10 @@
 			Name="Setup Headers"
 			>
 			<File
+				RelativePath="..\..\include\wx\univ\setup.h"
+				>
+			</File>
+			<File
 				RelativePath="..\..\include\wx\msw\setup.h"
 				>
 				<FileConfiguration
@@ -5790,10 +5794,6 @@
 						Outputs="..\..\lib\vc_lib\mswd\wx\setup.h"
 					/>
 				</FileConfiguration>
-			</File>
-			<File
-				RelativePath="..\..\include\wx\univ\setup.h"
-				>
 			</File>
 		</Filter>
 		<Filter
