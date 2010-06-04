@@ -19,7 +19,7 @@
 	<Configurations>
 		<Configuration
 			Name="ReleaseMT|Win32"
-			OutputDirectory=".\..\..\lib\vc8_lib"
+			OutputDirectory=".\..\..\lib\vc_lib"
 			IntermediateDirectory=".\vc8_msws_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -92,7 +92,7 @@
 		</Configuration>
 		<Configuration
 			Name="ReleaseMT|x64"
-			OutputDirectory=".\..\..\lib\vc8_lib_$(PlatformName)"
+			OutputDirectory=".\..\..\lib\vc_lib_$(PlatformName)"
 			IntermediateDirectory=".\vc8_msws_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -166,7 +166,7 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory=".\..\..\lib\vc8_lib"
+			OutputDirectory=".\..\..\lib\vc_lib"
 			IntermediateDirectory=".\vc8_msw_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -239,7 +239,7 @@
 		</Configuration>
 		<Configuration
 			Name="Release|x64"
-			OutputDirectory=".\..\..\lib\vc8_lib_$(PlatformName)"
+			OutputDirectory=".\..\..\lib\vc_lib_$(PlatformName)"
 			IntermediateDirectory=".\vc8_msw_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -313,7 +313,7 @@
 		</Configuration>
 		<Configuration
 			Name="Debug|Win32"
-			OutputDirectory=".\..\..\lib\vc8_lib"
+			OutputDirectory=".\..\..\lib\vc_lib"
 			IntermediateDirectory=".\vc8_mswd_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -385,7 +385,7 @@
 		</Configuration>
 		<Configuration
 			Name="Debug|x64"
-			OutputDirectory=".\..\..\lib\vc8_lib_$(PlatformName)"
+			OutputDirectory=".\..\..\lib\vc_lib_$(PlatformName)"
 			IntermediateDirectory=".\vc8_mswd_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
