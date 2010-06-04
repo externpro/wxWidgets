@@ -6,6 +6,9 @@
 *.sdf
 *.vcxproj.user
 cscope.*
+./_*_Debug
+./_*_Release
+./_*_Extern
 ./help/
 ./build/msw/vc_msw*
 ./lib/vc_lib*
@@ -13,3 +16,4 @@ cscope.*
 ./samples/samples.sln
 ./samples/*/*.vcproj
 ./samples/*/*/*.vcproj
+
