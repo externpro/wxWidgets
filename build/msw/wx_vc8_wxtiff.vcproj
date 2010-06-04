@@ -20,7 +20,7 @@
 		<Configuration
 			Name="ReleaseMT|Win32"
 			OutputDirectory=".\..\..\lib\vc8_lib"
-			IntermediateDirectory=".\vc_msws_$(PlatformName)\$(ProjectName)"
+			IntermediateDirectory=".\vc8_msws_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -94,7 +94,7 @@
 		<Configuration
 			Name="ReleaseMT|x64"
 			OutputDirectory=".\..\..\lib\vc8_lib_$(PlatformName)"
-			IntermediateDirectory=".\vc_msws_$(PlatformName)\$(ProjectName)"
+			IntermediateDirectory=".\vc8_msws_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -169,7 +169,7 @@
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory=".\..\..\lib\vc8_lib"
-			IntermediateDirectory=".\vc_mswd_$(PlatformName)\$(ProjectName)"
+			IntermediateDirectory=".\vc8_mswd_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -242,7 +242,7 @@
 		<Configuration
 			Name="Debug|x64"
 			OutputDirectory=".\..\..\lib\vc8_lib_$(PlatformName)"
-			IntermediateDirectory=".\vc_mswd_$(PlatformName)\$(ProjectName)"
+			IntermediateDirectory=".\vc8_mswd_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -316,7 +316,7 @@
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory=".\..\..\lib\vc8_lib"
-			IntermediateDirectory=".\vc_msw_$(PlatformName)\$(ProjectName)"
+			IntermediateDirectory=".\vc8_msw_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -390,7 +390,7 @@
 		<Configuration
 			Name="Release|x64"
 			OutputDirectory=".\..\..\lib\vc8_lib_$(PlatformName)"
-			IntermediateDirectory=".\vc_msw_$(PlatformName)\$(ProjectName)"
+			IntermediateDirectory=".\vc8_msw_$(PlatformName)\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
