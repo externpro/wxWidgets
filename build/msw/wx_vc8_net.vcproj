@@ -73,7 +73,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="$(OutDir)\wxbase28s_$(ProjectName).lib"
+				OutputFile="$(OutDir)\wxbase28vc80s_$(ProjectName).lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -85,7 +85,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile="$(OutDir)\wx_vc8_$(ProjectName)s.bsc"
+				OutputFile="$(OutDir)\$(TargetName).bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -151,7 +151,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="$(OutDir)\wxbase28s_$(ProjectName).lib"
+				OutputFile="$(OutDir)\wxbase28vc80s_$(ProjectName).lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -163,7 +163,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile="$(OutDir)\wx_vc8_$(ProjectName)s.bsc"
+				OutputFile="$(OutDir)\$(TargetName).bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -227,7 +227,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="$(OutDir)\wxbase28d_$(ProjectName).lib"
+				OutputFile="$(OutDir)\wxbase28vc80d_$(ProjectName).lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -239,7 +239,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile="$(OutDir)\wx_vc8_$(ProjectName)d.bsc"
+				OutputFile="$(OutDir)\$(TargetName).bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -304,7 +304,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="$(OutDir)\wxbase28d_$(ProjectName).lib"
+				OutputFile="$(OutDir)\wxbase28vc80d_$(ProjectName).lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -316,7 +316,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile="$(OutDir)\wx_vc8_$(ProjectName)d.bsc"
+				OutputFile="$(OutDir)\$(TargetName).bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -381,7 +381,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="$(OutDir)\wxbase28_$(ProjectName).lib"
+				OutputFile="$(OutDir)\wxbase28vc80_$(ProjectName).lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -393,7 +393,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile="$(OutDir)\wx_vc8_$(ProjectName).bsc"
+				OutputFile="$(OutDir)\$(TargetName).bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -459,7 +459,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="$(OutDir)\wxbase28_$(ProjectName).lib"
+				OutputFile="$(OutDir)\wxbase28vc80_$(ProjectName).lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -471,7 +471,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile="$(OutDir)\wx_vc8_$(ProjectName).bsc"
+				OutputFile="$(OutDir)\$(TargetName).bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
