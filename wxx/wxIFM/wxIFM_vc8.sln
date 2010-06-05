@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "demo1", "samples\demo1\demo1.vcproj", "{9DE82691-3E15-4BD3-B668-69AEC47CC399}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wxIFM", "wxIFM.vcproj", "{5F554641-DFB1-4F8F-AE9E-54E9F92D23ED}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wxIFM", "wxIFM_vc8.vcproj", "{5F554641-DFB1-4F8F-AE9E-54E9F92D23ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

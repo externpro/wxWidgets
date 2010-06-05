@@ -1,14 +1,14 @@
 Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wxIFM", "wxIFM\wxIFM.vcproj", "{5F554641-DFB1-4F8F-AE9E-54E9F92D23ED}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wxIFM", "wxIFM\wxIFM_vc8.vcproj", "{5F554641-DFB1-4F8F-AE9E-54E9F92D23ED}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wxTreeMultiCtrl", "wxTreeMultiCtrl\wxTreeMultiCtrl.vcproj", "{98ED6639-9537-403A-9F35-A316996D9A8F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wxTreeMultiCtrl", "wxTreeMultiCtrl\wxTreeMultiCtrl_vc8.vcproj", "{98ED6639-9537-403A-9F35-A316996D9A8F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wxthings", "wxthings\build\wxthings_wxthings.vcproj", "{4D8E76E1-A22A-43AB-A4BB-55493D825BDD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wxthings", "wxthings\build\wxthings_vc8.vcproj", "{4D8E76E1-A22A-43AB-A4BB-55493D825BDD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wxplotctrl", "wxplotctrl\build\wxplotctrl_wxplotctrl.vcproj", "{63064CA6-5808-403F-87A1-09735FFC8302}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wxplotctrl", "wxplotctrl\build\wxplotctrl_vc8.vcproj", "{63064CA6-5808-403F-87A1-09735FFC8302}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wxTreeListCtrl", "wxTreeListCtrl\wxTreeListCtrl.vcproj", "{913A85EB-E2C2-4BEA-93E8-E4C82A8BF40A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wxTreeListCtrl", "wxTreeListCtrl\wxTreeListCtrl_vc8.vcproj", "{913A85EB-E2C2-4BEA-93E8-E4C82A8BF40A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{81DB65E9-9248-470F-A1CF-543A17CA24A5}"
 EndProject

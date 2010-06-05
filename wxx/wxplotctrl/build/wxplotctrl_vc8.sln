@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wxplotctrl", "wxplotctrl_wxplotctrl.vcproj", "{63064CA6-5808-403F-87A1-09735FFC8302}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wxplotctrl", "wxplotctrl_vc8.vcproj", "{63064CA6-5808-403F-87A1-09735FFC8302}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "plotctrl_sample", "wxplotctrl_plotctrl_sample.vcproj", "{2FEF6C31-A20A-4067-9D98-A26464A41DE3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "plotctrl_sample", "wxplotctrl_sample_vc8.vcproj", "{2FEF6C31-A20A-4067-9D98-A26464A41DE3}"
 	ProjectSection(ProjectDependencies) = postProject
 		{63064CA6-5808-403F-87A1-09735FFC8302} = {63064CA6-5808-403F-87A1-09735FFC8302}
 	EndProjectSection

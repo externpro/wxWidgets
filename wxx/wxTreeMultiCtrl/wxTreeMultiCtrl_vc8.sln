@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wxTreeMultiCtrl", "wxTreeMultiCtrl.vcproj", "{98ED6639-9537-403A-9F35-A316996D9A8F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wxTreeMultiCtrl", "wxTreeMultiCtrl_vc8.vcproj", "{98ED6639-9537-403A-9F35-A316996D9A8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
