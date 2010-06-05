@@ -1,0 +1,6 @@
+base referer
+rect $classwx_i_f_m_container_data.html 8,82 157,109
+rect $classwx_i_f_m_floating_data.html 181,82 320,109
+rect $classwx_i_f_m_panel_data.html 344,82 469,109
+rect $classwx_i_f_m_panel_tab_data.html 493,82 640,109
+rect $classwx_i_f_m_resize_data.html 664,82 794,109

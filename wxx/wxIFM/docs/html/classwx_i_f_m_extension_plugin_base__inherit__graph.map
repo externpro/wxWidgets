@@ -1,0 +1,5 @@
+base referer
+rect $classwx_i_f_m_default_container_plugin.html 8,82 208,109
+rect $classwx_i_f_m_default_docking_plugin.html 232,82 424,109
+rect $classwx_i_f_m_default_panel_plugin.html 448,82 624,109
+rect $classwx_i_f_m_default_resize_plugin.html 648,82 832,109
