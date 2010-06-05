@@ -41,6 +41,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "richtext", "wx_vc8_richtext
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gl", "wx_vc8_gl.vcproj", "{72EC284C-6CA4-4771-A37B-0A76C6971EFF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sdlextern", "sdlextern_vc8.vcproj", "{30CB7973-CF6F-4EE1-828D-B94B650735EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -291,6 +293,18 @@ Global
 		{72EC284C-6CA4-4771-A37B-0A76C6971EFF}.ReleaseMT|Win32.Build.0 = ReleaseMT|Win32
 		{72EC284C-6CA4-4771-A37B-0A76C6971EFF}.ReleaseMT|x64.ActiveCfg = ReleaseMT|x64
 		{72EC284C-6CA4-4771-A37B-0A76C6971EFF}.ReleaseMT|x64.Build.0 = ReleaseMT|x64
+		{30CB7973-CF6F-4EE1-828D-B94B650735EB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{30CB7973-CF6F-4EE1-828D-B94B650735EB}.Debug|Win32.Build.0 = Debug|Win32
+		{30CB7973-CF6F-4EE1-828D-B94B650735EB}.Debug|x64.ActiveCfg = Debug|x64
+		{30CB7973-CF6F-4EE1-828D-B94B650735EB}.Debug|x64.Build.0 = Debug|x64
+		{30CB7973-CF6F-4EE1-828D-B94B650735EB}.Release|Win32.ActiveCfg = Release|Win32
+		{30CB7973-CF6F-4EE1-828D-B94B650735EB}.Release|Win32.Build.0 = Release|Win32
+		{30CB7973-CF6F-4EE1-828D-B94B650735EB}.Release|x64.ActiveCfg = Release|x64
+		{30CB7973-CF6F-4EE1-828D-B94B650735EB}.Release|x64.Build.0 = Release|x64
+		{30CB7973-CF6F-4EE1-828D-B94B650735EB}.ReleaseMT|Win32.ActiveCfg = ReleaseMT|Win32
+		{30CB7973-CF6F-4EE1-828D-B94B650735EB}.ReleaseMT|Win32.Build.0 = ReleaseMT|Win32
+		{30CB7973-CF6F-4EE1-828D-B94B650735EB}.ReleaseMT|x64.ActiveCfg = ReleaseMT|x64
+		{30CB7973-CF6F-4EE1-828D-B94B650735EB}.ReleaseMT|x64.Build.0 = ReleaseMT|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

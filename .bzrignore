@@ -10,8 +10,10 @@ cscope.*
 ./_*_Release
 ./_*_Extern
 ./help/
-./build/msw/vc_msw*
+./build/msw/vc?_msw*
+./build/msw/vc??_msw*
 ./lib/vc_lib*
+./lib/vc_extern*
 ./samples/*/vc_msw*
 ./samples/samples.sln
 ./samples/*/*.vcproj
