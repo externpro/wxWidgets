@@ -2,7 +2,7 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="8.00"
-	Name="demo1"
+	Name="ifm_demo1"
 	ProjectGUID="{9DE82691-3E15-4BD3-B668-69AEC47CC399}"
 	RootNamespace="demo1"
 	>
