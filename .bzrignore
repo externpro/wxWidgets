@@ -18,3 +18,8 @@ cscope.*
 ./samples/samples.sln
 ./samples/*/*.vcproj
 ./samples/*/*/*.vcproj
+./wxx/include
+./wxx/lib_*
+./wxx/wxIFM/build
+./wxx/wxTreeListCtrl/build
+_vc8_*
