@@ -611,6 +611,7 @@
 					>
 					<Tool
 						Name="VCCLCompilerTool"
+						AdditionalOptions="/Yldummylnk4206fix"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						UsePrecompiledHeader="1"
@@ -621,6 +622,7 @@
 					>
 					<Tool
 						Name="VCCLCompilerTool"
+						AdditionalOptions="/Yldummylnk4206fix"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						UsePrecompiledHeader="1"
@@ -631,6 +633,7 @@
 					>
 					<Tool
 						Name="VCCLCompilerTool"
+						AdditionalOptions="/Yldummylnk4206fix"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						UsePrecompiledHeader="1"
@@ -641,6 +644,7 @@
 					>
 					<Tool
 						Name="VCCLCompilerTool"
+						AdditionalOptions="/Yldummylnk4206fix"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						UsePrecompiledHeader="1"
@@ -651,6 +655,7 @@
 					>
 					<Tool
 						Name="VCCLCompilerTool"
+						AdditionalOptions="/Yldummylnk4206fix"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						UsePrecompiledHeader="1"
@@ -661,6 +666,7 @@
 					>
 					<Tool
 						Name="VCCLCompilerTool"
+						AdditionalOptions="/Yldummylnk4206fix"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						UsePrecompiledHeader="1"
@@ -2130,10 +2136,6 @@
 			Name="Setup Headers"
 			>
 			<File
-				RelativePath="..\..\include\wx\univ\setup.h"
-				>
-			</File>
-			<File
 				RelativePath="..\..\include\wx\msw\setup.h"
 				>
 				<FileConfiguration
@@ -2196,6 +2198,10 @@
 						Outputs="..\..\lib\vc_lib\msw\wx\setup.h"
 					/>
 				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\include\wx\univ\setup.h"
+				>
 			</File>
 		</Filter>
 		<Filter
