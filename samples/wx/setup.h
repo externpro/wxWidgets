@@ -1,4 +1,3 @@
-// <sdlOwner name='Scott M Anderson' email='scott.m.anderson@sdl.usu.edu' />
 /*
  *  Copyright (C) 2008 Utah State University Research Foundation.
  *  All rights reserved.  No part of this program may be
