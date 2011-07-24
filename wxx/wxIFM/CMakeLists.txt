@@ -8,6 +8,11 @@ include_directories(
   include
   src/ifm/xpm
 )
+if(MSVC)
+  include_directories(
+    ${wx_dir}/wxx # to find the MSVC-specific wx/setup.h
+  )
+endif()
 #######################################
 # library sources
 ########################
