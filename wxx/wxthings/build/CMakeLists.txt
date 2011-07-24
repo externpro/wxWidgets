@@ -1,6 +1,21 @@
-project( wxthings )
-
-set(SOURCES 
+set(lib_name wxthings)
+set(wx_dir ${CMAKE_CURRENT_SOURCE_DIR}/../../..)
+#######################################
+# include directories
+include_directories( 
+  ${wx_dir}/include
+  ../include
+)
+if(MSVC)
+  include_directories(
+    ${wx_dir}/wxx # to find the MSVC-specific wx/setup.h
+  )
+endif()
+#######################################
+# library sources
+########################
+# source
+set(things_srcs
   ../src/block.cpp
   ../src/bmpcombo.cpp
   ../src/dropdown.cpp
@@ -12,14 +27,27 @@ set(SOURCES
   ../src/range.cpp
   ../src/spinctld.cpp
   ../src/toggle.cpp
-  ../Makefile
 )
-
-include_directories( 
-  "$(ProjectDir)../.."
-  "$(ProjectDir)../../../include"
-  ../include
+list(APPEND ${lib_name}_libsrcs ${things_srcs})
+########################
+# headers
+set(things_hdrs
+  ../include/wx/things/block.h
+  ../include/wx/things/bmpcombo.h
+  ../include/wx/things/dropdown.h
+  ../include/wx/things/filebrws.h
+  ../include/wx/things/genergdi.h
+  ../include/wx/things/geometry.h
+  ../include/wx/things/medsort.h
+  ../include/wx/things/menubtn.h
+  ../include/wx/things/optvalue.h
+  ../include/wx/things/range.h
+  ../include/wx/things/spinctld.h
+  ../include/wx/things/thingdef.h
+  ../include/wx/things/toggle.h
 )
-
-add_library( wxthings STATIC ${SOURCES} )
+list(APPEND ${lib_name}_libsrcs ${things_hdrs})
+#######################################
+# library
+add_library(${lib_name} STATIC ${${lib_name}_libsrcs})
 

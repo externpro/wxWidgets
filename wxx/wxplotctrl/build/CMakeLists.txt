@@ -1,6 +1,22 @@
-project( wxplotctrl )
-
-set(SOURCES 
+set(lib_name wxplotctrl)
+set(wx_dir ${CMAKE_CURRENT_SOURCE_DIR}/../../..)
+#######################################
+# include directories
+include_directories( 
+  ${wx_dir}/include
+  ${wx_dir}/wxx/wxthings/include
+  ../include
+)
+if(MSVC)
+  include_directories(
+    ${wx_dir}/wxx # to find the MSVC-specific wx/setup.h
+  )
+endif()
+#######################################
+# library sources
+########################
+# source
+set(plot_srcs
   ../src/fourier.c
   ../src/fparser.cpp
   ../src/fpoptimizer.cc
@@ -12,15 +28,25 @@ set(SOURCES
   ../src/plotfunc.cpp
   ../src/plotmark.cpp
   ../src/plotprnt.cpp
-  ../Makefile
 )
-
-include_directories( 
-  "$(ProjectDir)../.."
-  "$(ProjectDir)../../../include"
-  ../../wxthings/include
-  ../include
+list(APPEND ${lib_name}_libsrcs ${plot_srcs})
+########################
+# headers
+set(plot_hdrs
+  ../include/wx/plotctrl/fourier.h
+  ../include/wx/plotctrl/fparser.h
+  ../include/wx/plotctrl/lm_lsqr.h
+  ../include/wx/plotctrl/plotctrl.h
+  ../include/wx/plotctrl/plotcurv.h
+  ../include/wx/plotctrl/plotdata.h
+  ../include/wx/plotctrl/plotdefs.h
+  ../include/wx/plotctrl/plotdraw.h
+  ../include/wx/plotctrl/plotfunc.h
+  ../include/wx/plotctrl/plotmark.h
+  ../include/wx/plotctrl/plotprnt.h
 )
-
-add_library( wxplotctrl STATIC ${SOURCES} )
+list(APPEND ${lib_name}_libsrcs ${plot_hdrs})
+#######################################
+# library
+add_library(${lib_name} STATIC ${${lib_name}_libsrcs})
 
