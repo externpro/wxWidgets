@@ -1,15 +1,31 @@
-project( wxTreeListCtrl )
-
-set(SOURCES 
-  src/treelistctrl.cpp
-  Makefile
-)
-
+set(lib_name wxTreeListCtrl)
+set(wx_dir ${CMAKE_CURRENT_SOURCE_DIR}/../..)
+#######################################
+# include directories
 include_directories( 
-  "$(ProjectDir).."
-  "$(ProjectDir)../../include"
+  ${wx_dir}/include
   include
 )
-
-add_library( wxTreeListCtrl STATIC ${SOURCES} )
+if(MSVC)
+  include_directories(
+    ${wx_dir}/wxx # to find the MSVC-specific wx/setup.h
+  )
+endif()
+#######################################
+# library sources
+########################
+# source
+set(treelist_srcs
+  src/treelistctrl.cpp
+)
+list(APPEND ${lib_name}_libsrcs ${treelist_srcs})
+########################
+# headers
+set(treelist_hdrs
+  include/wx/treelistctrl.h
+)
+list(APPEND ${lib_name}_libsrcs ${treelist_hdrs})
+#######################################
+# library
+add_library(${lib_name} STATIC ${${lib_name}_libsrcs})
 

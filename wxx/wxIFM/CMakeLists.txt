@@ -3,7 +3,6 @@ set(wx_dir ${CMAKE_CURRENT_SOURCE_DIR}/../..)
 #######################################
 # include directories
 include_directories( 
-  #"$(ProjectDir).."
   ${wx_dir}/include
   include
   src/ifm/xpm

@@ -4,8 +4,8 @@ set(wxx_libs
   wxIFM
   wxplotctrl/build
   wxthings/build
-  #wxTreeListCtrl
-  #wxTreeMultiCtrl
+  wxTreeListCtrl
+  wxTreeMultiCtrl/sdl
 )
 foreach(lib ${wxx_libs})
   add_subdirectory(${lib})
