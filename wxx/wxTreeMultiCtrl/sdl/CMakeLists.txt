@@ -1,4 +1,4 @@
-set(lib_name wxTreeMultiCtrl)
+set(lib_name tmc) # wxTreeMultiCtrl
 set(wx_dir ${CMAKE_CURRENT_SOURCE_DIR}/../../..)
 set(tm_inc ${CMAKE_CURRENT_SOURCE_DIR}/../contrib/include/wx/treemultictrl)
 set(tm_src ${CMAKE_CURRENT_SOURCE_DIR}/../contrib/src/treemultictrl)
@@ -41,4 +41,5 @@ list(APPEND ${lib_name}_libsrcs ${treemulti_hdrs})
 #######################################
 # library
 add_library(${lib_name} STATIC ${${lib_name}_libsrcs})
+set_target_properties(${lib_name} PROPERTIES OUTPUT_NAME ${wxbasename}_${lib_name}-${wxversion})
 

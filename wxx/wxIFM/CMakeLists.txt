@@ -1,4 +1,4 @@
-set(lib_name wxIFM)
+set(lib_name ifm)
 set(wx_dir ${CMAKE_CURRENT_SOURCE_DIR}/../..)
 #######################################
 # include directories
@@ -61,4 +61,5 @@ list(APPEND ${lib_name}_libsrcs ${ifm_misc})
 #######################################
 # library
 add_library(${lib_name} STATIC ${${lib_name}_libsrcs})
+set_target_properties(${lib_name} PROPERTIES OUTPUT_NAME ${wxbasename}_${lib_name}-${wxversion})
 
