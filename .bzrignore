@@ -18,4 +18,3 @@ cscope.*
 ./samples/samples.sln
 ./samples/*/*.vcproj
 ./samples/*/*/*.vcproj
-
