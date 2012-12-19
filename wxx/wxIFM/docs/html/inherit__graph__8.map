@@ -1,6 +1,0 @@
-base referer
-rect $classwx_i_f_m_extension_plugin_base.html 8,84 197,110
-rect $classwx_i_f_m_default_container_plugin.html 246,8 446,34
-rect $classwx_i_f_m_default_docking_plugin.html 250,58 442,85
-rect $classwx_i_f_m_default_panel_plugin.html 258,109 434,136
-rect $classwx_i_f_m_default_resize_plugin.html 254,160 438,186
