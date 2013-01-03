@@ -1,3 +1,4 @@
+_bld*
 *.ncb
 *.suo
 *.vcproj.*.*.user
@@ -9,6 +10,7 @@ _*_Debug
 _*_Release
 _*_Extern
 help/
+build/msw/ipch
 build/msw/vc?_msw*
 build/msw/vc??_msw*
 lib/vc_lib*

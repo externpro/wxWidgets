@@ -1,61 +1,37 @@
-/*
- *  Copyright (C) 2008 Utah State University Research Foundation.
- *  All rights reserved.  No part of this program may be
- *  photocopied, reproduced, or translated to another program
- *  language without the prior written consent of Utah State
- *  University Research Foundation.
- *
- *  Filename: setup.h
- *  Description: This header is included by wxWidgets source code (our code
+/*  Filename: setup.h
+ *  Description: This header is included by wxWidgets source code (SDL code
  *    shouldn't need to explicitly include this header). It includes the
  *    appropriate setup.h and detects the wxWidgets version being used and
  *    chooses the appropriate libraries automatically. This header makes it so
  *    we won't need to modify the wxWidgets library names in the vcproj files
  *    when we switch wxWidgets versions.
- *  Author: Scott M Anderson
- *  Version: $Id: setup.h 16056 2010-06-06 10:31:55Z smanders $
+ *  Author: Scott M Anderson (aka smanders)
  */
 
 #ifdef _MSC_VER
 #include <wx/version.h>
 #if wxCHECK_VERSION(2,9,0)
 # ifdef WIN64
-#  ifdef _DEBUG
-#   include "../../lib/vc_lib/_mswud/wx/setup.h"
-#  else // NDEBUG
-#   include "../../lib/vc_lib/_mswu/wx/setup.h"
-#  endif
+#  include "../../../../lib64/mswu/wx/setup.h"
 # else // WIN32
-#  ifdef _DEBUG
-#   include "../../lib/vc_lib/_mswud/wx/setup.h"
-#  else // NDEBUG
-#   include "../../lib/vc_lib/_mswu/wx/setup.h"
-#  endif
+#  include "../../../../lib32/mswu/wx/setup.h"
 # endif
 #else
 #  ifdef _UNICODE
-#   error "Unicode support missing in sdlExtern/include/msvc/wx/setup.h"
+#   error "Unicode support missing in externpro/include/wx/msvc/wx/setup.h"
 #  endif
 #  ifdef WIN64
-#   ifdef _DEBUG
-#    include "../../lib/vc_lib/_mswd/wx/setup.h"
-#   else // NDEBUG
-#    include "../../lib/vc_lib/_msw/wx/setup.h"
-#   endif
+#   include "../../../../lib64/msw/wx/setup.h"
 #  else // WIN32
-#   ifdef _DEBUG
-#    include "../../lib/vc_lib/_mswd/wx/setup.h"
-#   else // NDEBUG
-#    include "../../lib/vc_lib/_msw/wx/setup.h"
-#   endif
+#   include "../../../../lib32/msw/wx/setup.h"
 #  endif
 # endif // wxCHECK_VERSION
 #else
 # error "This file should only be included when using Microsoft Visual C++"
 #endif // _MSC_VER
 
-#ifndef _WXLIBS_DEFINED_
-#define _WXLIBS_DEFINED_
+#ifndef WXLIBS_DEFINED
+#define WXLIBS_DEFINED
 
 // wxWidgets includes <windows.h> in their wx/msw/wrapwin.h header - and they
 // do a good job of defining some things (like NOMINMAX) in wrapwin.h, but
@@ -162,16 +138,16 @@
 # pragma comment(lib, "wxmsw" wxVersion wxCompiler wxUnicode wxRuntime "_richtext")
 # pragma comment(lib, "wxmsw" wxVersion wxCompiler wxUnicode wxRuntime "_xrc")
 #endif // wxCHECK_VERSION
-// 3rd-party wxWidgets libraries in sdlExtern (wxx = wx-extra)
+// 3rd-party wxWidgets libraries in externpro (wxx = wx-extra)
 //  not part of the main wxWidgets distribution...
-//#pragma comment(lib, "wxxmsw" wxVersion wxCompiler wxRuntime "_ifm") // wxIFM
-//#pragma comment(lib, "wxxmsw" wxVersion wxCompiler wxRuntime "_tlc") // wxTreeListCtrl
-//#pragma comment(lib, "wxxmsw" wxVersion wxCompiler wxRuntime "_tmc") // wxTreeMultiCtrl
-//#pragma comment(lib, "wxxmsw" wxVersion wxCompiler wxRuntime "_things") // wxthings
-//#pragma comment(lib, "wxxmsw" wxVersion wxCompiler wxRuntime "_plotctrl") // wxplotctrl
+#pragma comment(lib, "wxxmsw" wxVersion wxCompiler wxRuntime "_ifm") // wxIFM
+#pragma comment(lib, "wxxmsw" wxVersion wxCompiler wxRuntime "_tlc") // wxTreeListCtrl
+#pragma comment(lib, "wxxmsw" wxVersion wxCompiler wxRuntime "_tmc") // wxTreeMultiCtrl
+#pragma comment(lib, "wxxmsw" wxVersion wxCompiler wxRuntime "_things") // wxthings
+#pragma comment(lib, "wxxmsw" wxVersion wxCompiler wxRuntime "_plotctrl") // wxplotctrl
 
 // wxCore requires the following system libraries
 #pragma comment(lib, "rpcrt4")
 #pragma comment(lib, "comctl32")
 
-#endif // _WXLIBS_DEFINED_
+#endif // WXLIBS_DEFINED
