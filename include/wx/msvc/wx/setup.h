@@ -149,5 +149,6 @@
 // wxCore requires the following system libraries
 #pragma comment(lib, "rpcrt4")
 #pragma comment(lib, "comctl32")
+#pragma comment(lib, "gdiplus") // wxUSE_GRAPHICS_CONTEXT set to 1 in setup.h
 
 #endif // WXLIBS_DEFINED
