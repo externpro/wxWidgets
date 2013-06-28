@@ -85,12 +85,22 @@
 # define wxRuntime "s"
 #endif
 
-#if _MSC_VER >= 1600 // VC 10.0 (aka 2010)
-# define wxCompiler "vc100"
-#elif _MSC_VER >= 1400 // VC 8.0 (aka 2005)
+#if _MSC_VER == 1200
+# define wxCompiler "vc60"
+#elif _MSC_VER == 1300
+# define wxCompiler "vc70"
+#elif _MSC_VER == 1310
+# define wxCompiler "vc71"
+#elif _MSC_VER == 1400 // VC 8.0 (aka VS2005)
 # define wxCompiler "vc80"
+#elif _MSC_VER == 1500
+# define wxCompiler "vc90"
+#elif _MSC_VER == 1600 // VC 10.0 (aka VS2010)
+# define wxCompiler "vc100"
+#elif _MSC_VER == 1700
+# define wxCompiler "vc110" // VC 11.0 (aka VS2012)
 #else
-# error "Unsupported compiler"
+# error "include/wx/msvc/wx/setup.h: unsupported MSVC compiler version"
 #endif
 
 // Tell the linker which wx libraries to include
