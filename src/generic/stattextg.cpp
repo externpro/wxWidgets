@@ -45,6 +45,8 @@ bool wxGenericStaticText::Create(wxWindow *parent,
     SetLabel(label);
     SetInitialSize(size);
     Connect(wxEVT_PAINT, wxPaintEventHandler(wxGenericStaticText::OnPaint));
+    // reduce flickering
+    Bind(wxEVT_ERASE_BACKGROUND, [](wxEraseEvent&){});
     return true;
 }
 
