@@ -36,6 +36,8 @@ bool wxGenericStaticBitmap::Create(wxWindow *parent, wxWindowID id,
     m_scaleMode = Scale_None;
     SetBitmap(bitmap);
     Connect(wxEVT_PAINT, wxPaintEventHandler(wxGenericStaticBitmap::OnPaint));
+    // reduce flickering
+    Bind(wxEVT_ERASE_BACKGROUND, [](wxEraseEvent&){});
     return true;
 }
 
