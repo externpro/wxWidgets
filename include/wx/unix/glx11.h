@@ -10,7 +10,17 @@
 #ifndef _WX_UNIX_GLX11_H_
 #define _WX_UNIX_GLX11_H_
 
+#if defined __sun && ((__GNUC__ == 4) && (__GNUC_MINOR__ < 6))
+// these defines are used to resolve conflict on Solaris 10 gcc 4.5.3
+// between /usr/openwin/include/GL/glext.h and /usr/include/sys/int_types.h
+# define uint64_t uint64_t_hack
+# define int64_t int64_t_hack
+# include <GL/glx.h>
+# undef uint64_t
+# undef int64_t
+#else
 #include <GL/glx.h>
+#endif
 
 // ----------------------------------------------------------------------------
 // wxGLContext
