@@ -15,6 +15,8 @@
     #include "wx/dcclient.h"
 #endif
 
+#include "wx/dcbuffer.h"
+#include "wx/graphics.h"
 #include "wx/generic/statbmpg.h"
 
 bool wxGenericStaticBitmap::Create(wxWindow *parent, wxWindowID id,
@@ -25,6 +27,7 @@ bool wxGenericStaticBitmap::Create(wxWindow *parent, wxWindowID id,
     if (! wxControl::Create(parent, id, pos, size, style,
                             wxDefaultValidator, name))
         return false;
+    SetBackgroundStyle(wxBG_STYLE_PAINT);
     SetBitmap(bitmap);
     Connect(wxEVT_PAINT, wxPaintEventHandler(wxGenericStaticBitmap::OnPaint));
     // reduce flickering
@@ -34,9 +37,15 @@ bool wxGenericStaticBitmap::Create(wxWindow *parent, wxWindowID id,
 
 void wxGenericStaticBitmap::OnPaint(wxPaintEvent& WXUNUSED(event))
 {
-    wxPaintDC dc(this);
+    wxAutoBufferedPaintDC dc(this);
+    wxScopedPtr<wxGraphicsContext> gc(wxGraphicsContext::Create(dc));
+    auto bgClr = GetParent()->GetBackgroundColour();
+    if (UseBgCol())
+        bgClr = GetBackgroundColour();
+    dc.SetBackground(wxBrush(bgClr));
+    dc.Clear();
     if (m_bitmap.IsOk())
-        dc.DrawBitmap(m_bitmap, 0, 0, true);
+        gc->DrawBitmap(m_bitmap, 0, 0, m_bitmap.GetWidth(), m_bitmap.GetHeight());
 }
 
 // under OSX_cocoa is a define, avoid duplicate info
