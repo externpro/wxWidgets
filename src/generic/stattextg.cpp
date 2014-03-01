@@ -43,6 +43,7 @@ bool wxGenericStaticText::Create(wxWindow *parent,
                             wxDefaultValidator, name) )
         return false;
 
+    SetForegroundColour(wxSystemSettings::GetColour(wxSYS_COLOUR_BTNTEXT));
     SetBackgroundStyle(wxBG_STYLE_PAINT);
     SetLabel(label);
     SetInitialSize(size);
@@ -82,8 +83,7 @@ void wxGenericStaticText::OnPaint(wxPaintEvent& WXUNUSED(event))
     wxRect rect = GetClientRect();
     if ( IsEnabled() )
     {
-        dc.SetTextForeground(
-                       wxSystemSettings::GetColour(wxSYS_COLOUR_BTNTEXT));
+        dc.SetTextForeground(GetForegroundColour());
     }
     else // paint disabled text
     {
