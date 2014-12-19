@@ -31,17 +31,9 @@
 #include <WebKit/WebKit.h>
 #include <WebKit/HIWebView.h>
 #include <WebKit/CarbonUtils.h>
-<<<<<<< HEAD
 
 #include <Foundation/NSURLError.h>
 
-=======
-#endif
-#include <Foundation/NSURLError.h>
-
-// using native types to get compile errors and warnings
-
->>>>>>> 1a5b712... using proper types for webkit variants, see #16329
 #define DEBUG_WEBKIT_SIZING 0
 
 // ----------------------------------------------------------------------------
@@ -450,11 +442,7 @@ void wxWebViewWebKit::GoBack()
     if ( !m_webView )
         return;
 
-<<<<<<< HEAD
-    [(WebView*)m_webView goBack];
-=======
     [m_webView goBack];
->>>>>>> 1a5b712... using proper types for webkit variants, see #16329
 }
 
 void wxWebViewWebKit::GoForward()
@@ -462,11 +450,7 @@ void wxWebViewWebKit::GoForward()
     if ( !m_webView )
         return;
 
-<<<<<<< HEAD
-    [(WebView*)m_webView goForward];
-=======
     [m_webView goForward];
->>>>>>> 1a5b712... using proper types for webkit variants, see #16329
 }
 
 void wxWebViewWebKit::Reload(wxWebViewReloadFlags flags)
@@ -865,11 +849,7 @@ void wxWebViewWebKit::Cut()
     if ( !m_webView )
         return;
 
-<<<<<<< HEAD
-    [(WebView*)m_webView cut:m_webView];
-=======
     [m_webView cut:m_webView];
->>>>>>> 1a5b712... using proper types for webkit variants, see #16329
 }
 
 void wxWebViewWebKit::Copy()
@@ -877,11 +857,7 @@ void wxWebViewWebKit::Copy()
     if ( !m_webView )
         return;
 
-<<<<<<< HEAD
-    [(WebView*)m_webView copy:m_webView];
-=======
     [m_webView copy:m_webView];
->>>>>>> 1a5b712... using proper types for webkit variants, see #16329
 }
 
 void wxWebViewWebKit::Paste()
@@ -889,11 +865,7 @@ void wxWebViewWebKit::Paste()
     if ( !m_webView )
         return;
 
-<<<<<<< HEAD
-    [(WebView*)m_webView paste:m_webView];
-=======
     [m_webView paste:m_webView];
->>>>>>> 1a5b712... using proper types for webkit variants, see #16329
 }
 
 void wxWebViewWebKit::DeleteSelection()
@@ -901,11 +873,7 @@ void wxWebViewWebKit::DeleteSelection()
     if ( !m_webView )
         return;
 
-<<<<<<< HEAD
-    [(WebView*)m_webView deleteSelection];
-=======
     [m_webView deleteSelection];
->>>>>>> 1a5b712... using proper types for webkit variants, see #16329
 }
 
 bool wxWebViewWebKit::HasSelection() const
