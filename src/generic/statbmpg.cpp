@@ -15,6 +15,7 @@
     #include "wx/dcclient.h"
 #endif
 
+#include "wx/dcbuffer.h"
 #include "wx/generic/statbmpg.h"
 
 #if wxUSE_GRAPHICS_CONTEXT
@@ -34,6 +35,7 @@ bool wxGenericStaticBitmap::Create(wxWindow *parent, wxWindowID id,
                             wxDefaultValidator, name))
         return false;
     m_scaleMode = Scale_None;
+    SetBackgroundStyle(wxBG_STYLE_PAINT);
     SetBitmap(bitmap);
     Connect(wxEVT_PAINT, wxPaintEventHandler(wxGenericStaticBitmap::OnPaint));
     // reduce flickering
@@ -46,7 +48,12 @@ void wxGenericStaticBitmap::OnPaint(wxPaintEvent& WXUNUSED(event))
     if ( !m_bitmap.IsOk() )
         return;
 
-    wxPaintDC dc(this);
+    wxAutoBufferedPaintDC dc(this);
+    auto bgClr = GetParent()->GetBackgroundColour();
+    if ( UseBgCol() )
+        bgClr = GetBackgroundColour();
+    dc.SetBackground(wxBrush(bgClr));
+    dc.Clear();
     const wxSize drawSize = GetClientSize();
     const wxSize bmpSize = m_bitmap.GetSize();
     wxDouble w = 0;
