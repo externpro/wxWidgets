@@ -21,6 +21,7 @@
     #include "wx/validate.h"
 #endif
 
+#include "wx/dcbuffer.h"
 #include "wx/generic/stattextg.h"
 
 #if wxUSE_MARKUP
@@ -42,6 +43,7 @@ bool wxGenericStaticText::Create(wxWindow *parent,
                             wxDefaultValidator, name) )
         return false;
 
+    SetBackgroundStyle(wxBG_STYLE_PAINT);
     SetLabel(label);
     SetInitialSize(size);
     Connect(wxEVT_PAINT, wxPaintEventHandler(wxGenericStaticText::OnPaint));
@@ -69,7 +71,13 @@ void wxGenericStaticText::DoDrawLabel(wxDC& dc, const wxRect& rect)
 
 void wxGenericStaticText::OnPaint(wxPaintEvent& WXUNUSED(event))
 {
-    wxPaintDC dc(this);
+    wxAutoBufferedPaintDC dc(this);
+
+    auto bgClr = GetParent()->GetBackgroundColour();
+    if ( UseBgCol() )
+        bgClr = GetBackgroundColour();
+    dc.SetBackground(wxBrush(bgClr));
+    dc.Clear();
 
     wxRect rect = GetClientRect();
     if ( !IsEnabled() )
