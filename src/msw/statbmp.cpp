@@ -134,6 +134,9 @@ bool wxStaticBitmap::Create(wxWindow *parent,
         Connect(wxEVT_PAINT, wxPaintEventHandler(wxStaticBitmap::DoPaintManually));
     }
 
+    // reduce flickering
+    Bind(wxEVT_ERASE_BACKGROUND, [](wxEraseEvent&){});
+
     return true;
 }
 

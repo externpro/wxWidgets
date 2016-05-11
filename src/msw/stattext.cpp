@@ -51,6 +51,9 @@ bool wxStaticText::Create(wxWindow *parent,
     // the initial size correctly -- do it now
     SetInitialSize(size);
 
+    // reduce flickering
+    Bind(wxEVT_ERASE_BACKGROUND, [](wxEraseEvent&){});
+
     // NOTE: if the label contains ampersand characters which are interpreted as
     //       accelerators, they will be rendered (at least on WinXP) only if the
     //       static text is placed inside a window class which correctly handles
