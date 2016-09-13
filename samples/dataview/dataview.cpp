@@ -166,10 +166,8 @@ private:
 class MyCustomRenderer: public wxDataViewCustomRenderer
 {
 public:
-    MyCustomRenderer()
-        : wxDataViewCustomRenderer("string",
-                                   wxDATAVIEW_CELL_ACTIVATABLE,
-                                   wxALIGN_CENTER)
+    explicit MyCustomRenderer(wxDataViewCellMode mode)
+        : wxDataViewCustomRenderer("string", mode, wxALIGN_CENTER)
        { }
 
     virtual bool Render( wxRect rect, wxDC *dc, int state )
@@ -215,6 +213,34 @@ public:
     }
 
     virtual bool GetValue( wxVariant &WXUNUSED(value) ) const { return true; }
+
+    virtual bool HasEditorCtrl() const { return true; }
+
+    virtual wxWindow*
+    CreateEditorCtrl(wxWindow* parent,
+                     wxRect labelRect,
+                     const wxVariant& value)
+    {
+        wxTextCtrl* text = new wxTextCtrl(parent, wxID_ANY, value,
+                                          labelRect.GetPosition(),
+                                          labelRect.GetSize(),
+                                          wxTE_PROCESS_ENTER);
+        text->SetInsertionPointEnd();
+
+        return text;
+    }
+
+    virtual bool
+    GetValueFromEditorCtrl(wxWindow* ctrl, wxVariant& value)
+    {
+        wxTextCtrl* text = wxDynamicCast(ctrl, wxTextCtrl);
+        if ( !text )
+            return false;
+
+        value = text->GetValue();
+
+        return true;
+    }
 
 private:
     wxString m_value;
@@ -592,7 +618,7 @@ void MyFrame::BuildDataViewCtrl(wxPanel* parent, unsigned int nPanel, unsigned l
 
             // column 5 of the view control:
 
-            MyCustomRenderer *cr = new MyCustomRenderer;
+            MyCustomRenderer *cr = new MyCustomRenderer(wxDATAVIEW_CELL_ACTIVATABLE);
             wxDataViewColumn *column5 =
                 new wxDataViewColumn( "custom", cr, 5, -1, wxALIGN_LEFT,
                                       wxDATAVIEW_COL_RESIZABLE );
@@ -634,7 +660,7 @@ void MyFrame::BuildDataViewCtrl(wxPanel* parent, unsigned int nPanel, unsigned l
 
             m_ctrl[1]->AppendColumn(
                 new wxDataViewColumn("custom renderer",
-                                     new MyCustomRenderer,
+                                     new MyCustomRenderer(wxDATAVIEW_CELL_EDITABLE),
                                      MyListModel::Col_Custom)
             );
         }

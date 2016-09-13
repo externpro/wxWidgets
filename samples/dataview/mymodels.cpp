@@ -440,7 +440,13 @@ void MyListModel::GetValueByRow( wxVariant &variant,
             break;
 
         case Col_Custom:
-            variant = wxString::Format("%d", row % 100);
+            {
+                IntToStringMap::const_iterator it = m_customColValues.find(row);
+                if ( it != m_customColValues.end() )
+                    variant = it->second;
+                else
+                    variant = wxString::Format("%d", row % 100);
+            }
             break;
 
         case Col_Max:
@@ -526,7 +532,7 @@ bool MyListModel::SetValueByRow( const wxVariant &variant,
 
         case Col_TextWithAttr:
         case Col_Custom:
-            wxLogError("Cannot edit the column %d", col);
+            m_customColValues[row] = variant.GetString();
             break;
 
         case Col_Max:
