@@ -1471,7 +1471,11 @@ static GtkCellEditable *gtk_wx_cell_renderer_start_editing(
     if (!cell->StartEditing(item, renderrect))
         return NULL;
 
+#ifdef __WXGTK3__
+    wxrenderer->editor_bin = gtk_wx_cell_editor_bin_new(cell->GetEditorCtrl());
+#else
     wxrenderer->editor_bin = cell->GetEditorCtrl()->m_widget;
+#endif
     gtk_widget_show(wxrenderer->editor_bin);
 
     return GTK_CELL_EDITABLE(wxrenderer->editor_bin);
