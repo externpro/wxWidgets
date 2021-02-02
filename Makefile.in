@@ -107,6 +107,8 @@ WXZLIB_OBJECTS =  \
 WXPNG_CFLAGS = -DNDEBUG $(__INC_ZLIB_p) $(____SHARED) $(CPPFLAGS) $(CFLAGS)
 WXPNG_OBJECTS =  \
 	wxpng_png.o \
+	wxpng_arm_init.o \
+	wxpng_filter_neon_intrinsics.o \
 	wxpng_pngerror.o \
 	wxpng_pngget.o \
 	wxpng_pngmem.o \
@@ -14816,6 +14818,12 @@ wxzlib_zutil.o: $(srcdir)/src/zlib/zutil.c
 
 wxpng_png.o: $(srcdir)/src/png/png.c
 	$(CCC) -c -o $@ $(WXPNG_CFLAGS) $(srcdir)/src/png/png.c
+
+wxpng_arm_init.o: $(srcdir)/src/png/png.c
+	$(CCC) -c -o $@ $(WXPNG_CFLAGS) $(srcdir)/src/png/arm/arm_init.c
+
+wxpng_filter_neon_intrinsics.o: $(srcdir)/src/png/arm/filter_neon_intrinsics.c
+	$(CCC) -c -o $@ $(WXPNG_CFLAGS) $(srcdir)/src/png/arm/filter_neon_intrinsics.c
 
 wxpng_pngerror.o: $(srcdir)/src/png/pngerror.c
 	$(CCC) -c -o $@ $(WXPNG_CFLAGS) $(srcdir)/src/png/pngerror.c
